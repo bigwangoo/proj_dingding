@@ -1,0 +1,50 @@
+<resources>
+    <string name="tx_app_name">TxUtils</string>
+    <string name="tx_under_construction">正在建设中...</string>
+    <string name="tx_about_us">关于我们</string>
+    <string name="tx_debug">调试</string>
+    <string name="tx_login">登录</string>
+    <string name="tx_setting">设置</string>
+    <string name="tx_gallery">相册</string>
+    <string name="tx_take_photo">拍照</string>
+    <string name="tx_browse_picture">查看图片</string>
+    <string name="tx_wrong_param">参数错误</string>
+
+    <string name="tx_update">更新</string>
+    <string name="tx_cancel">取消</string>
+    <string name="tx_software_update">软件更新</string>
+    <string name="tx_cancel_update">已取消更新</string>
+    <string name="tx_already_newest_version">已是最新版本</string>
+    <string name="tx_file_not_exist">文件不存在</string>
+
+    <string name="tx_no_permission">没有权限</string>
+    <string name="tx_title_settings_dialog">需要权限</string>
+    <string name="tx_rationale_sdcard">程序需要SD卡读写权限</string>
+    <string name="tx_rationale_update">程序需要SD卡读写权限更新软件，请同意权限申请</string>
+    <string name="tx_rationale_camera">程序需要相机权限进行拍照</string>
+    <string name="tx_rationale_gallery">程序需要SD卡读写权限选取照片</string>
+    <string name="tx_rationale_location">程序需要地理位置权限获取天气信息，请同意权限申请</string>
+    <string name="tx_rationale_denied">当前应用申请权限被拒绝，请重新申请或退出</string>
+    <string name="tx_rationale_ask_again">当前应用缺少运行必要权限，可能无法正常使用，请在设置界面中手动打开</string>
+    <string name="tx_returned_from_app_settings_to_activity">设置完毕</string>
+
+    <string name="tx_loading">加载中...</string>
+    <string name="tx_error_reading_cache">缓存读取失败</string>
+    <string name="tx_please_check_network">请检查网络连接</string>
+    <string name="tx_retry_server_conn_err">服务器连接失败，请稍后重试</string>
+    <string name="tx_retry_server_conn_timeout">网络连接超时，请稍后重试</string>
+    <string name="tx_retry_illegal_state">数据加载失败，请稍后再试</string>
+    <string name="tx_retry_http_error">网络连接错误</string>
+    <string name="tx_retry_parse_exception">数据解析异常，请稍后再试</string>
+    <string name="tx_retry_error_def">服务出错啦，请稍后再试</string>
+
+
+    <string name="tx_company_tel">公司电话</string>
+    <string name="tx_company_address">公司地址</string>
+    <string name="tx_company_email">公司邮箱</string>
+    <string name="tx_company_code">公司邮编</string>
+    <string name="tx_company_website">公司官网</string>
+    <string name="tx_company_weibo">公司微博</string>
+    <string name="tx_company_wechat">公司微信</string>
+    <string name="tx_company_copyright">苏州天下布医信息科技有限公司 版权所有</string>
+</resources>

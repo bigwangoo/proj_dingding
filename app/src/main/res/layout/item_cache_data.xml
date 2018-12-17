@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/selector_bg_pressed"
+    android:minHeight="@dimen/dp_60"
+    android:paddingLeft="@dimen/dp_16"
+    android:paddingTop="@dimen/dp_6"
+    android:paddingRight="@dimen/dp_16"
+    android:paddingBottom="@dimen/dp_6">
+
+    <TextView
+        android:id="@+id/tv_title"
+        style="@style/textColor1_18sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="@dimen/dp_120"
+        tools:text="随访标题" />
+
+    <TextView
+        android:id="@+id/tv_time"
+        style="@style/textColor2_14sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_title"
+        android:layout_marginTop="@dimen/dp_8"
+        tools:text="2018" />
+
+    <RelativeLayout
+        android:id="@+id/rl_download"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:padding="@dimen/dp_8">
+
+        <ImageView
+            android:id="@+id/iv_download"
+            android:layout_width="@dimen/dp_28"
+            android:layout_height="@dimen/dp_28"
+            android:src="@drawable/cache_download"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/iv_progress"
+            android:layout_width="@dimen/dp_28"
+            android:layout_height="@dimen/dp_28"
+            android:src="@drawable/progress_black"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/iv_failed"
+            android:layout_width="@dimen/dp_28"
+            android:layout_height="@dimen/dp_28"
+            android:src="@drawable/cache_failed"
+            android:visibility="gone"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/iv_update"
+            android:layout_width="@dimen/dp_28"
+            android:layout_height="@dimen/dp_28"
+            android:src="@drawable/cache_update"
+            android:visibility="gone"
+            tools:ignore="ContentDescription" />
+    </RelativeLayout>
+</RelativeLayout>

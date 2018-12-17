@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.tianxiabuyi.txutils.widget.BounceScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/default_bg"
+    android:overScrollMode="never">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/dp_16">
+
+        <requestFocus />
+
+        <TextView
+            style="@style/follow_up_text"
+            android:text="@string/followup_base_info" />
+
+        <com.tianxiabuyi.txutils_ui.setting.SettingEditView
+            android:id="@+id/sev_name"
+            style="@style/follow_up_sev"
+            app:sevContentEnable="false"
+            app:sevContentHintText="请输入姓名"
+            app:sevContentTextLength="10"
+            app:sevLeftText="@string/followup_name" />
+
+        <com.tianxiabuyi.txutils_ui.setting.SettingEditView
+            android:id="@+id/sev_number"
+            style="@style/follow_up_sev"
+            app:sevContentEnable="false"
+            app:sevContentHintText="请输入编号"
+            app:sevContentInputType="number"
+            app:sevContentTextLength="25"
+            app:sevLeftText="@string/followup_number" />
+
+        <com.tianxiabuyi.txutils_ui.setting.SettingItemView
+            android:id="@+id/siv_visit_time"
+            style="@style/follow_up_siv"
+            app:sivContentHintText="请选择随访时间"
+            app:sivLeftText="@string/followup_t_f_visit_time" />
+
+        <com.tianxiabuyi.txutils_ui.setting.SettingItemView
+            android:id="@+id/siv_visit_type"
+            style="@style/follow_up_siv"
+            app:sivContentHintText="请选择随访方式"
+            app:sivLeftText="@string/followup_t_f_visit_type" />
+
+        <com.tianxiabuyi.txutils_ui.setting.SettingItemView
+            android:id="@+id/siv_patient_type"
+            style="@style/follow_up_siv"
+            app:sivContentHintText="请选择患者类型"
+            app:sivLeftText="@string/followup_t_f_patient_type" />
+
+        <com.tianxiabuyi.txutils_ui.setting.SettingItemView
+            android:id="@+id/siv_sputum_bacterium"
+            style="@style/follow_up_siv"
+            app:sivContentHintText="请选择痰菌情况"
+            app:sivLeftText="@string/followup_t_f_sputum_bacterium" />
+
+        <com.tianxiabuyi.txutils_ui.setting.SettingItemView
+            android:id="@+id/siv_medicine_resistance"
+            style="@style/follow_up_siv"
+            app:sivContentHintText="请选择耐药情况"
+            app:sivLeftText="@string/followup_t_f_medicine_resistance" />
+
+        <TextView
+            style="@style/follow_up_text"
+            android:text="@string/followup_t_f_symptom" />
+
+        <com.tianxiabuyi.txutils_ui.setting.SettingItemView
+            android:id="@+id/siv_visit_symptom"
+            style="@style/follow_up_siv"
+            app:sivContentHintText="请选择症状"
+            app:sivLeftText="@string/followup_t_f_symptom" />
+
+        <com.tianxiabuyi.txutils_ui.setting.SettingEditView
+            android:id="@+id/sev_symptom_other"
+            style="@style/follow_up_sev"
+            app:sevBottomLineEnabled="true"
+            app:sevContentHintText="请输入其他症状"
+            app:sevContentTextLength="50"
+            app:sevLeftText="@string/followup_t_f_symptom_other" />
+
+        <TextView
+            style="@style/follow_up_text"
+            android:text="@string/followup_t_f_medicine" />
+
+        <com.tianxiabuyi.txutils_ui.setting.SettingEditView
+            android:id="@+id/sev_chemotherapy"
+            style="@style/follow_up_sev"
+            app:sevContentHintText="请输入化疗方案"
+            app:sevLeftText="@string/followup_t_f_chemotherapy" />
+
+        <com.tianxiabuyi.txutils_ui.setting.SettingItemView
+            android:id="@+id/siv_drug_usage"
+            style="@style/follow_up_siv"
+            app:sivContentHintText="请选择用法"
+            app:sivLeftText="@string/followup_t_f_usage" />
+
+        <com.tianxiabuyi.txutils_ui.setting.SettingItemView
+            android:id="@+id/siv_dosage_form"
+            style="@style/follow_up_siv"
+            app:sivContentHintText="请选择药品剂型"
+            app:sivLeftText="@string/followup_t_f_dosage_form" />
+
+        <com.tianxiabuyi.txutils_ui.setting.SettingItemView
+            android:id="@+id/siv_guardian"
+            style="@style/follow_up_siv"
+            app:sivContentHintText="请选择督导人员"
+            app:sivLeftText="@string/followup_t_f_guardian" />
+
+        <TextView
+            style="@style/follow_up_text"
+            android:text="@string/followup_t_f_evr_value" />
+
+        <com.tianxiabuyi.txutils_ui.setting.SettingItemView
+            android:id="@+id/siv_personal_room"
+            style="@style/follow_up_siv"
+            app:sivContentHintText="请选择有无单独的居室"
+            app:sivLeftText="@string/followup_t_f_personal_room" />
+
+        <com.tianxiabuyi.txutils_ui.setting.SettingItemView
+            android:id="@+id/siv_ventilation"
+            style="@style/follow_up_siv"
+            app:sivContentHintText="请选择通风情况"
+            app:sivLeftText="@string/followup_t_f_ventilation" />
+
+        <TextView
+            style="@style/follow_up_text"
+            android:text="@string/followup_t_f_life_value" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:minHeight="56dp">
+
+            <TextView
+                android:layout_width="@dimen/dp_100"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_12"
+                android:layout_marginLeft="@dimen/dp_12"
+                android:text="@string/followup_t_f_smoking"
+                android:textColor="@color/TextColor1"
+                android:textSize="@dimen/sp_16" />
+
+            <EditText
+                android:id="@+id/et_smoking_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_12"
+                android:layout_marginLeft="@dimen/dp_12"
+                android:inputType="numberDecimal"
+                android:maxLength="10"
+                android:minWidth="@dimen/dp_60"
+                android:textSize="@dimen/sp_16" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="/"
+                android:textSize="@dimen/sp_16" />
+
+            <EditText
+                android:id="@+id/et_smoking_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:maxLength="10"
+                android:minWidth="@dimen/dp_60"
+                android:textSize="@dimen/sp_16" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="支/天"
+                android:textColor="@color/TextColor2"
+                android:textSize="@dimen/sp_16" />
+        </LinearLayout>
+
+        <View style="@style/TxHorizontalLine" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:minHeight="56dp">
+
+            <TextView
+                android:layout_width="@dimen/dp_100"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_12"
+                android:layout_marginLeft="@dimen/dp_12"
+                android:text="@string/followup_t_f_drinking"
+                android:textColor="@color/TextColor1"
+                android:textSize="@dimen/sp_16" />
+
+            <EditText
+                android:id="@+id/et_drinking_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_12"
+                android:layout_marginLeft="@dimen/dp_12"
+                android:inputType="numberDecimal"
+                android:maxLength="10"
+                android:minWidth="@dimen/dp_60"
+                android:textSize="@dimen/sp_16" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="/"
+                android:textSize="@dimen/sp_16" />
+
+            <EditText
+                android:id="@+id/et_drinking_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:maxLength="10"
+                android:minWidth="@dimen/dp_60"
+                android:textSize="@dimen/sp_16" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="两/天"
+                android:textColor="@color/TextColor2"
+                android:textSize="@dimen/sp_16" />
+        </LinearLayout>
+
+        <View style="@style/TxHorizontalLine" />
+
+        <TextView
+            style="@style/follow_up_text"
+            android:text="@string/followup_t_f_health" />
+
+        <com.tianxiabuyi.txutils_ui.setting.SettingEditView
+            android:id="@+id/sev_take_m_position"
+            style="@style/follow_up_sev"
+            app:sevBottomLineEnabled="true"
+            app:sevContentHintText="请输入取药地点"
+            app:sevContentTextLength="10"
+            app:sevLeftText="@string/followup_t_f_take_m_position" />
+
+        <com.tianxiabuyi.txutils_ui.setting.SettingItemView
+            android:id="@+id/siv_take_m_time"
+            style="@style/follow_up_siv"
+            app:sivContentHintText="请选择取药时间"
+            app:sivLeftText="@string/followup_t_f_take_m_time" />
+
+        <com.tianxiabuyi.txutils_ui.setting.SettingItemView
+            android:id="@+id/siv_medicine_record"
+            style="@style/follow_up_siv"
+            app:sivContentHintText="服药记录卡的填写"
+            app:sivLeftText="@string/followup_t_f_medicine_record" />
+
+        <com.tianxiabuyi.txutils_ui.setting.SettingItemView
+            android:id="@+id/siv_medicine_usage"
+            style="@style/follow_up_siv"
+            app:sivContentHintText="服药方法及药品存放"
+            app:sivLeftText="@string/followup_t_f_medicine_usage" />
+
+        <com.tianxiabuyi.txutils_ui.setting.SettingItemView
+            android:id="@+id/siv_treatment_course"
+            style="@style/follow_up_siv"
+            app:sivContentHintText="肺结核治疗疗程"
+            app:sivLeftText="@string/followup_t_f_treatment_course" />
+
+        <com.tianxiabuyi.txutils_ui.setting.SettingItemView
+            android:id="@+id/siv_irregular_damage"
+            style="@style/follow_up_siv"
+            app:sivContentHintText="不规律服药危害"
+            app:sivLeftText="@string/followup_t_f_irregular_damage" />
+
+        <com.tianxiabuyi.txutils_ui.setting.SettingItemView
+            android:id="@+id/siv_bad_effect"
+            style="@style/follow_up_siv"
+            app:sivContentHintText="服药后不良反应及处理"
+            app:sivLeftText="@string/followup_t_f_bad_effect" />
+
+        <com.tianxiabuyi.txutils_ui.setting.SettingItemView
+            android:id="@+id/siv_subsequent_visit"
+            style="@style/follow_up_siv"
+            app:sivContentHintText="治疗期间复诊查痰"
+            app:sivLeftText="@string/followup_t_f_subsequent_visit" />
+
+        <com.tianxiabuyi.txutils_ui.setting.SettingItemView
+            android:id="@+id/siv_insist_take_medicine"
+            style="@style/follow_up_siv"
+            app:sivContentHintText="外出期间如何坚持服药"
+            app:sivLeftText="@string/followup_t_f_insist_take_medicine" />
+
+        <com.tianxiabuyi.txutils_ui.setting.SettingItemView
+            android:id="@+id/siv_habits_customs"
+            style="@style/follow_up_siv"
+            app:sivContentHintText="生活习惯及注意事项"
+            app:sivLeftText="@string/followup_t_f_habits_customs" />
+
+        <com.tianxiabuyi.txutils_ui.setting.SettingItemView
+            android:id="@+id/siv_others_examination"
+            style="@style/follow_up_siv"
+            app:sivContentHintText="密切接触者检查"
+            app:sivLeftText="@string/followup_t_f_others_examination" />
+
+        <com.tianxiabuyi.txutils_ui.setting.SettingItemView
+            android:id="@+id/siv_next_visit_time"
+            style="@style/follow_up_siv"
+            app:sivContentHintText="请选择下次随访时间"
+            app:sivLeftText="@string/followup_t_f_next_visit_time" />
+
+        <com.tianxiabuyi.txutils_ui.setting.SettingEditView
+            android:id="@+id/sev_management_doctor"
+            style="@style/follow_up_sev"
+            app:sevBottomLineEnabled="true"
+            app:sevContentHintText="评估医生签名"
+            app:sevContentTextLength="10"
+            app:sevLeftText="@string/followup_t_f_doctor_name" />
+
+    </LinearLayout>
+</com.tianxiabuyi.txutils.widget.BounceScrollView>

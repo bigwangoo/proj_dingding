@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 圆角按钮 -->
+    <declare-styleable name="TxCircleButton">
+        <attr name="radius" format="dimension" />
+        <attr name="back_color" format="color" />
+    </declare-styleable>
+
+    <!-- CARD 病历背景 -->
+    <declare-styleable name="CardTicketView">
+        <attr name="ctvItemHeight" format="dimension" />
+        <attr name="ctvCircleRadius" format="dimension" />
+        <attr name="ctvCirclePaddingLeft" format="dimension" />
+        <attr name="ctvCirclePaddingRight" format="dimension" />
+        <attr name="ctvCircleColor" format="color" />
+        <attr name="ctvShowDivider" format="boolean" />
+        <attr name="ctvDashHeight" format="float" />
+        <attr name="ctvDashWidth" format="float" />
+        <attr name="ctvDashSpaceWidth" format="float" />
+    </declare-styleable>
+
+    <declare-styleable name="CardDividerView">
+        <attr name="cdvItemHeight" format="dimension" />
+        <attr name="cdvCircleRadius" format="dimension" />
+        <attr name="cdvCirclePaddingLeft" format="dimension" />
+        <attr name="cdvCirclePaddingRight" format="dimension" />
+        <attr name="cdvCircleColor" format="color" />
+        <attr name="cdvShowDivider" format="boolean" />
+        <attr name="cdvDashHeight" format="float" />
+        <attr name="cdvDashWidth" format="float" />
+        <attr name="cdvDashSpaceWidth" format="float" />
+    </declare-styleable>
+
+    <!-- 日期选择器 -->
+    <declare-styleable name="DatePicker">
+        <attr name="dpShowTitle" format="boolean" />
+        <attr name="dpShowDivider" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="MetroItem">
+        <attr name="miTitleText" format="string|integer" />
+        <attr name="miIntroText" format="string|integer" />
+        <attr name="miIcon" format="reference" />
+        <attr name="miBackground" format="reference" />
+        <attr name="miClickable" format="boolean" />
+        <attr name="miPadding" format="dimension" />
+    </declare-styleable>
+
+    <!-- 输入框 带清除 -->
+    <declare-styleable name="CleanableEditText">
+        <attr name="clear_size" format="dimension" />
+    </declare-styleable>
+
+    <!-- 设置条目 输入用 -->
+    <declare-styleable name="SettingEditView">
+        <attr name="sevBackground" format="reference" />
+        <attr name="sevTopLineEnabled" format="boolean" />
+        <attr name="sevBottomLineEnabled" format="boolean" />
+
+        <attr name="sevLeftWidth" format="dimension" />
+        <attr name="sevLeftHeight" format="dimension" />
+        <attr name="sevLeftIcon" format="reference" />
+        <attr name="sevLeftIconWidth" format="dimension" />
+        <attr name="sevLeftIconHeight" format="dimension" />
+        <attr name="sevLeftText" format="string|integer" />
+        <attr name="sevLeftTextSize" format="dimension" />
+        <attr name="sevLeftTextColor" format="color" />
+        <attr name="sevLeftSubText" format="string|integer" />
+        <attr name="sevLeftSubTextSize" format="dimension" />
+        <attr name="sevLeftSubTextColor" format="color" />
+
+        <attr name="sevContentText" format="string|integer" />
+        <attr name="sevContentTextColor" format="color" />
+        <attr name="sevContentHintText" format="string|integer" />
+        <attr name="sevContentHintTextColor" format="color" />
+        <attr name="sevContentTextLength" format="integer" />
+        <attr name="sevContentMinHeight" format="dimension" />
+        <attr name="sevContentSingleLine" format="boolean" />
+        <attr name="sevContentEnable" format="boolean" />
+        <attr name="sevContentInputType" format="enum">
+            <enum name="text" value="0" />
+            <enum name="number" value="1" />
+            <enum name="phone" value="2" />
+            <enum name="numberDecimal" value="3" />
+        </attr>
+
+        <attr name="sevRightText" format="string|integer" />
+        <attr name="sevRightTextSize" format="dimension" />
+        <attr name="sevRightTextColor" format="color" />
+    </declare-styleable>
+
+    <!-- 设置条目 设置用 -->
+    <declare-styleable name="SettingItemView">
+        <attr name="sivBackground" format="reference" />
+        <attr name="sivTopLineEnabled" format="boolean" />
+        <attr name="sivBottomLineEnabled" format="boolean" />
+
+        <attr name="sivLeftWidth" format="dimension" />
+        <attr name="sivLeftHeight" format="dimension" />
+        <attr name="sivLeftIcon" format="reference" />
+        <attr name="sivLeftIconWidth" format="dimension" />
+        <attr name="sivLeftIconHeight" format="dimension" />
+        <attr name="sivLeftText" format="string|integer" />
+        <attr name="sivLeftTextSize" format="dimension" />
+        <attr name="sivLeftTextColor" format="color" />
+        <attr name="sivLeftSubText" format="string|integer" />
+        <attr name="sivLeftSubTextSize" format="dimension" />
+        <attr name="sivLeftSubTextColor" format="color" />
+
+        <attr name="sivContentEnabled" format="boolean" />
+        <attr name="sivContentHintText" format="string|integer" />
+        <attr name="sivContentHintTextColor" format="color" />
+        <attr name="sivContentText" format="string|integer" />
+        <attr name="sivContentTextColor" format="color" />
+        <attr name="sivContentMinHeight" format="dimension" />
+
+        <attr name="sivRightText" format="string|integer" />
+        <attr name="sivRightTextSize" format="dimension" />
+        <attr name="sivRightTextColor" format="color" />
+        <attr name="sivRightSubText" format="string|integer" />
+        <attr name="sivRightSubTextSize" format="dimension" />
+        <attr name="sivRightSubTextColor" format="color" />
+        <attr name="sivRightIcon" format="reference" />
+        <attr name="sivRightIconWidth" format="dimension" />
+        <attr name="sivRightIconHeight" format="dimension" />
+        <attr name="sivArrowEnabled" format="boolean" />
+        <attr name="sivArrowIcon" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="TitleBarView">
+        <attr name="tbvLeftIcon" format="reference" />
+
+        <attr name="tbvTitleText" format="string|integer" />
+        <attr name="tbvTitleTextSize" format="dimension" />
+
+        <attr name="tbvMoreText" format="string|integer" />
+        <attr name="tbvMoreTextSize" format="dimension" />
+
+        <attr name="tbvArrowIcon" format="reference" />
+        <attr name="tbvArrowEnabled" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="ModuleItem">
+        <attr name="mItemPic" format="reference" />
+        <attr name="mItemTitle" format="string|integer" />
+        <attr name="mItemDesc" format="string|integer" />
+    </declare-styleable>
+
+    <declare-styleable name="SubModuleItem">
+        <attr name="mSubItemPic" format="reference" />
+        <attr name="mSubItemTitle" format="string|integer" />
+        <attr name="mSubItemDesc" format="string|integer" />
+    </declare-styleable>
+
+    <declare-styleable name="CardListItem">
+        <attr name="cardListTitle" format="string|integer" />
+        <attr name="cardListMoreText" format="string|integer" />
+    </declare-styleable>
+
+    <declare-styleable name="CardFrameItem">
+        <attr name="cardFrameTitle" format="string|integer" />
+        <attr name="cardFrameMoreText" format="string|integer" />
+        <attr name="cardFrameMoreTextEnabled" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="SearchBar">
+        <attr name="searchBarHint" format="reference|string" />
+        <attr name="showIcon" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="PasswordEditText">
+        <attr name="vpeIconSize" format="dimension" />
+        <attr name="vpeIcon" format="reference" />
+    </declare-styleable>
+
+    <!-- TextView 两端对齐的自定义属性 -->
+    <declare-styleable name="TxAlignTextView">
+        <!-- 文本 -->
+        <attr name="txAlignText" format="string" />
+        <!-- 后缀符号类型: 全角、半角 -->
+        <attr name="txAlignSuffixMode" format="enum">
+            <enum name="full_width" value="1" />
+            <enum name="half_width" value="2" />
+        </attr>
+    </declare-styleable>
+</resources>

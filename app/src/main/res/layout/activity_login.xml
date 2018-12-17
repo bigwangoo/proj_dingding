@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerInParent="true"
+    android:background="@color/white"
+    android:fillViewport="true"
+    android:orientation="vertical"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="70dp"
+            android:layout_marginBottom="24dp"
+            android:src="@drawable/def_user_avatar"
+            tools:ignore="ContentDescription" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_12"
+            android:layout_marginEnd="@dimen/dp_12"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/dp_16"
+            android:paddingRight="@dimen/dp_16">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:minHeight="50dp"
+                android:orientation="horizontal"
+                android:padding="12dp">
+
+                <!--<TextView-->
+                <!--android:layout_width="80dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="@string/login_common_phone"-->
+                <!--android:textColor="@color/tx_text_dark"-->
+                <!--android:textSize="16sp" />-->
+
+                <com.tianxiabuyi.txutils_ui.edittext.CleanableEditText
+                    android:id="@+id/edtUserId"
+                    style="@style/EditText_White_Bg_SingleLine"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:digits="1234567890abcdefghijklmnopqrstuvwxyz"
+                    android:hint="@string/login_hint_phone"
+                    android:inputType="phone"
+                    android:textColorHint="@color/tx_text_hint"
+                    android:textSize="@dimen/sp_14" />
+            </LinearLayout>
+
+            <View style="@style/TxHorizontalLine" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:minHeight="50dp"
+                android:orientation="horizontal"
+                android:padding="12dp">
+
+                <!--<TextView-->
+                <!--android:layout_width="80dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="@string/login_common_pwd"-->
+                <!--android:textColor="@color/tx_text_dark"-->
+                <!--android:textSize="16sp" />-->
+
+                <com.tianxiabuyi.txutils_ui.edittext.CleanableEditText
+                    android:id="@+id/edtPwd"
+                    style="@style/EditText_White_Bg_SingleLine"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="@string/login_hint_pwd"
+                    android:inputType="textPassword"
+                    android:textColorHint="@color/tx_text_hint"
+                    android:textSize="@dimen/sp_14" />
+
+                <ImageView
+                    android:id="@+id/ivEye"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/dp_2"
+                    android:layout_marginLeft="@dimen/dp_2"
+                    android:paddingStart="@dimen/dp_8"
+                    android:paddingEnd="@dimen/dp_8"
+                    android:src="@drawable/ic_eye_close" />
+
+                <TextView
+                    android:id="@+id/tvForgot"
+                    android:layout_width="56dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/dp_2"
+                    android:layout_marginLeft="@dimen/dp_2"
+                    android:gravity="center"
+                    android:text="@string/login_common_forgot"
+                    android:textColor="@color/tx_text_main"
+                    android:textSize="@dimen/sp_12" />
+            </LinearLayout>
+
+            <View style="@style/TxHorizontalLine" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/selector_bg_btn_submit"
+            android:text="@string/login_common_login"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_40"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingStart="@dimen/dp_30"
+            android:paddingEnd="@dimen/dp_30">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0.5dp"
+                android:layout_weight="2"
+                android:background="@color/tx_bg_line" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:paddingStart="@dimen/dp_4"
+                android:paddingEnd="@dimen/dp_4"
+                android:text="@string/login_other_login"
+                android:textColor="@color/tx_text_hint"
+                android:textSize="@dimen/sp_14" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0.5dp"
+                android:layout_weight="2"
+                android:background="@color/tx_bg_line" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp_50"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/dp_20"
+            android:paddingBottom="@dimen/dp_20">
+
+            <LinearLayout
+                android:id="@+id/llLoginWechat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/dp_45"
+                    android:layout_height="@dimen/dp_45"
+                    android:src="@drawable/ic_login_wechat"
+                    tools:ignore="ContentDescription" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_2"
+                    android:text="微信登录"
+                    android:textColor="@color/tx_text_hint"
+                    android:textSize="@dimen/sp_12" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llLoginQQ"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_100"
+                android:layout_marginLeft="@dimen/dp_100"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/dp_45"
+                    android:layout_height="@dimen/dp_45"
+                    android:src="@drawable/ic_login_qq"
+                    tools:ignore="ContentDescription" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_2"
+                    android:text="QQ登录"
+                    android:textColor="@color/tx_text_hint"
+                    android:textSize="@dimen/sp_12" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

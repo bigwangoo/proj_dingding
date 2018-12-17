@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/selector_bg_pressed"
+    android:padding="@dimen/dp_16">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/dp_90"
+        android:layout_marginRight="@dimen/dp_60"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/textColor1_16sp"
+            tools:text="村民姓名" />
+
+        <TextView
+            android:id="@+id/tv_area"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_8"
+            android:textColor="@color/TextColor1"
+            android:textSize="@dimen/sp_16"
+            android:visibility="gone"
+            tools:text="县乡村" />
+
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            style="@style/textColor3_16sp"
+            tools:text="测量时间" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_8"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/sp_16"
+            android:text="点击查看详情" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_upload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="@dimen/dp_8"
+        android:background="@drawable/selector_bg_btn_submit"
+        android:paddingBottom="@dimen/dp_8"
+        android:paddingEnd="@dimen/dp_30"
+        android:paddingStart="@dimen/dp_30"
+        android:paddingTop="@dimen/dp_8"
+        android:text="上传"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_16" />
+
+</RelativeLayout>

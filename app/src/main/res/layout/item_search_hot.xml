@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:id="@+id/tvHotName"
+    android:layout_height="wrap_content"
+    android:background="@drawable/selector_bg_pressed_gray"
+    android:paddingBottom="@dimen/dp_6"
+    android:paddingEnd="@dimen/dp_16"
+    android:paddingStart="@dimen/dp_16"
+    android:paddingTop="@dimen/dp_6"
+    android:textColor="@color/tx_text"
+    tools:text="某某村" />

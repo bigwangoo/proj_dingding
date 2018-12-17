@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/blood_pop_transparent">
+
+    <RelativeLayout
+        android:id="@+id/ctl_content"
+        style="@style/blood_pop_whitebg"
+        android:layout_width="290dp"
+        android:layout_height="360dp"
+        android:layout_centerInParent="true">
+
+        <FrameLayout
+            android:id="@+id/fl_ripple"
+            android:layout_width="290dp"
+            android:layout_height="290dp">
+
+            <com.tianxiabuyi.villagedoctor.common.view.RippleView
+                android:layout_width="290dp"
+                android:layout_height="290dp"
+                android:layout_gravity="center"
+                app:rv_center_color="#ADDBFF"
+                app:rv_center_radius="100"
+                app:rv_spread_color="#ADDBFF"
+                app:rv_spread_delay_milliseconds="45"
+                app:rv_spread_distance="5"
+                app:rv_spread_max_radius="90" />
+
+            <ImageView
+                android:id="@+id/iv_scan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_device" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/tv_title2"
+            style="@style/textColor3_14sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/dp_22"
+            android:gravity="center"
+            android:lineSpacingExtra="@dimen/dp_4"
+            android:paddingTop="6dp"
+            android:text="请确认手机蓝牙已开启，\n请确保设备蓝牙开关已开启。" />
+
+        <TextView
+            android:id="@+id/tv_title1"
+            style="@style/textColor1_16sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/tv_title2"
+            android:layout_marginBottom="@dimen/dp_8"
+            android:gravity="center"
+            android:text="正在进行设备搜索" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ctl_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-50dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/blood_close" />
+
+</RelativeLayout>

@@ -1,0 +1,61 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.tianxiabuyi.txutils">
+
+    <uses-sdk tools:overrideLibrary="com.wbtech.ums" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+    <!-- 8.0安装权限 -->
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+
+    <application>
+
+        <!-- 关于我们 -->
+        <activity
+            android:name=".activity.TxAboutUsActivity"
+            android:label="@string/tx_about_us"
+            android:screenOrientation="portrait" />
+
+        <!-- 安装应用 -->
+        <activity
+            android:name=".activity.TxUpdateActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/TxAppDialogActivity" />
+
+        <!-- 上传头像 -->
+        <activity
+            android:name=".util.avatar.TxPhotoHelperActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/TxAppTranslucentTheme" />
+
+        <!-- 图片选择 -->
+        <activity
+            android:name=".activity.TxImagePickerActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/TxAppTranslucentTheme" />
+
+        <!-- 图片预览 -->
+        <activity
+            android:name=".activity.TxImagePreViewActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- WebView -->
+        <activity
+            android:name=".activity.TxWebViewActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 7.0 适配下载APK、头像上传, authorities为包名 -->
+        <provider
+            android:name="com.tianxiabuyi.txutils.app.TxFileProvider"
+            android:authorities="${applicationId}.FileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/tx_file_paths" />
+        </provider>
+
+    </application>
+
+</manifest>

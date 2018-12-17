@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.tianxiabuyi.txutils.widget.BounceScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:overScrollMode="never">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+
+        <requestFocus />
+
+        <com.tianxiabuyi.txutils_ui.setting.SettingItemView
+            android:id="@+id/siv_type"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_60"
+            android:padding="@dimen/dp_4"
+            app:sivArrowEnabled="false"
+            app:sivLeftText="名称"
+            app:sivLeftTextSize="@dimen/sp_16"
+            app:sivRightTextColor="@color/TextColor1" />
+
+        <View style="@style/TxHorizontalLine" />
+
+        <com.tianxiabuyi.txutils_ui.setting.SettingItemView
+            android:id="@+id/siv_resident"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_60"
+            android:padding="@dimen/dp_4"
+            app:sivArrowEnabled="true"
+            app:sivLeftText="居民"
+            app:sivLeftTextSize="@dimen/sp_16"
+            app:sivRightText="点击选择居民"
+            app:sivRightTextColor="@color/TextColor1"
+            app:sivRightTextSize="@dimen/sp_16" />
+
+        <View style="@style/TxHorizontalLine" />
+
+        <LinearLayout
+            android:id="@+id/ll_relationship"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone"
+            tools:visibility="visible">
+
+            <com.tianxiabuyi.txutils_ui.setting.SettingItemView
+                android:id="@+id/siv_relationship"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_60"
+                android:padding="@dimen/dp_4"
+                app:sivArrowEnabled="true"
+                app:sivContentHintText="请输入与户主关系"
+                app:sivLeftText="与户主关系"
+                app:sivLeftTextSize="@dimen/sp_16"
+                app:sivRightTextColor="@color/TextColor1" />
+
+            <View style="@style/TxHorizontalLine" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dp_14"
+            android:text="重点人群类别"
+            android:textColor="@color/TextColor2"
+            android:textSize="@dimen/sp_16" />
+
+        <TextView
+            android:id="@+id/tv_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:drawableEnd="@drawable/tx_arrow_forward"
+            android:drawableRight="@drawable/tx_arrow_forward"
+            android:hint="选择标签"
+            android:padding="@dimen/dp_16"
+            android:textColor="@color/TextColor1"
+            android:textSize="@dimen/sp_16" />
+
+        <View style="@style/TxHorizontalLine" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dp_14"
+            android:text="签约服务包"
+            android:textColor="@color/TextColor2"
+            android:textSize="@dimen/sp_16" />
+
+        <TextView
+            android:id="@+id/tv_service_pack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:drawableEnd="@drawable/tx_arrow_forward"
+            android:drawableRight="@drawable/tx_arrow_forward"
+            android:hint="选择服务包"
+            android:padding="@dimen/dp_16"
+            android:textColor="@color/TextColor1"
+            android:textSize="@dimen/sp_16" />
+
+        <View style="@style/TxHorizontalLine" />
+
+        <Button
+            android:id="@+id/btn_add_member"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dp_40"
+            android:layout_marginBottom="@dimen/dp_40"
+            android:background="@drawable/selector_bg_btn_blue_circle"
+            android:text="确定"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+</com.tianxiabuyi.txutils.widget.BounceScrollView>

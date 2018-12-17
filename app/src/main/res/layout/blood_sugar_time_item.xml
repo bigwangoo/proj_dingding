@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tv_name"
+        style="@style/blood_choose_pop_text"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/statistics_month_textcolor"
+        android:background="@drawable/blood_blue_pressed_selector"
+        android:text="血压仪"
+        />
+
+</android.support.constraint.ConstraintLayout>

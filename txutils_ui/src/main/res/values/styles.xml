@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 字体 -->
+    <style name="H1">
+        <item name="android:textSize">@dimen/H1</item>
+    </style>
+
+    <style name="H1Dark">
+        <item name="android:textSize">@dimen/H1</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="H1Light">
+        <item name="android:textSize">@dimen/H1</item>
+        <item name="android:textColor">@color/tx_text_light</item>
+    </style>
+
+    <style name="H2">
+        <item name="android:textSize">@dimen/H2</item>
+    </style>
+
+    <style name="H2Dark">
+        <item name="android:textSize">@dimen/H2</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="H2Light">
+        <item name="android:textSize">@dimen/H2</item>
+        <item name="android:textColor">@color/tx_text_light</item>
+    </style>
+
+    <style name="H3">
+        <item name="android:textSize">@dimen/H3</item>
+    </style>
+
+    <style name="H3Dark">
+        <item name="android:textSize">@dimen/H2</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="H3Light">
+        <item name="android:textSize">@dimen/H2</item>
+        <item name="android:textColor">@color/tx_text_light</item>
+    </style>
+
+    <!-- 横线 -->
+    <style name="TxHorizontalLine">
+        <item name="android:layout_height">2px</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">@color/tx_bg_line</item>
+    </style>
+
+    <!-- 竖线 -->
+    <style name="TxVerticalLine">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">1px</item>
+        <item name="android:background">@color/tx_bg_line</item>
+    </style>
+
+    <!-- 标题样式 -->
+    <style name="TxTitleTextStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <!-- 输入框样式 -->
+    <style name="TxEditTextStyle">
+        <item name="android:background">@drawable/tx_bg_search</item>
+        <item name="android:drawablePadding">@dimen/dp_8</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:imeOptions">actionSearch</item>
+        <item name="android:paddingLeft">6dp</item>
+        <item name="android:paddingRight">12dp</item>
+        <item name="android:paddingTop">6dp</item>
+        <item name="android:paddingBottom">6dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColorHint">@color/dimgray</item>
+        <item name="android:textColor">@color/tx_text_main</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:hint">搜索科室/专家</item>
+    </style>
+
+    <!-- 自定义对话框 -->
+    <style name="CustomDialog" parent="android:style/Theme.Dialog">
+        <item name="android:background">#00000000</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+
+</resources>

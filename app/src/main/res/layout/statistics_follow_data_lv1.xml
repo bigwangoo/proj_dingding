@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:background="@color/line_c"
+    >
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1dp"
+        android:layout_marginRight="1dp"
+        android:background="#f8f8f8"
+        android:paddingBottom="@dimen/dp_12"
+        android:paddingLeft="35dp"
+        android:paddingRight="@dimen/dp_20"
+        android:paddingTop="@dimen/dp_12"
+        >
+
+        <TextView
+            android:id="@+id/tv_name"
+            style="@style/textColor2_16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="16sp"
+            tools:text="开始时间"
+            />
+    </android.support.constraint.ConstraintLayout>
+</FrameLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.tianxiabuyi.villagedoctor.common.view.LoadingLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/loadingLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/default_bg">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_120"
+            android:background="@color/colorPrimary" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_service"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dp_16"
+            android:layout_marginRight="@dimen/dp_16"
+            android:background="@drawable/shape_bg_round_white_top"
+            android:overScrollMode="never"
+            android:paddingBottom="@dimen/dp_16" />
+    </FrameLayout>
+</com.tianxiabuyi.villagedoctor.common.view.LoadingLayout>

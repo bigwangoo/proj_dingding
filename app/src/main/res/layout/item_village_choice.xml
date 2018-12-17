@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rlPersonalInfo"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/selector_bg_pressed"
+    android:gravity="center_vertical"
+    android:paddingTop="@dimen/dp_12"
+    android:paddingBottom="@dimen/dp_12">
+
+    <ImageView
+        android:id="@+id/iv_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_30"
+        android:layout_marginLeft="@dimen/dp_30"
+        android:src="@drawable/ic_detail_info"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_8"
+        android:layout_marginLeft="@dimen/dp_8"
+        android:layout_toEndOf="@id/iv_icon"
+        android:layout_toRightOf="@id/iv_icon"
+        android:textColor="@color/tx_text"
+        android:textSize="@dimen/sp_16"
+        tools:text="基本信息" />
+
+    <TextView
+        android:id="@+id/tv_sub_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_title"
+        android:layout_alignStart="@id/tv_title"
+        android:layout_alignLeft="@id/tv_title"
+        android:layout_marginTop="@dimen/dp_6"
+        android:textColor="@color/TextColor2"
+        tools:text="个人基本信息表" />
+</RelativeLayout>

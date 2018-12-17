@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="tx_setting_img_id" type="id" />
+    <item name="tx_setting_txt_id" type="id" />
+    <item name="tx_setting_arrow_id" type="id" />
+    <item name="tx_setting_right_text_id" type="id" />
+    <item name="tx_setting_sub_txt_id" type="id"/>
+    <item name="tx_setting_ll_txt" type="id"/>
+    <item name="tx_setting_right_sub_txt_id" type="id"/>
+    <item name="tx_setting_right_ll_txt" type="id"/>
+    <item name="tx_setting_right_img" type="id"/>
+</resources>

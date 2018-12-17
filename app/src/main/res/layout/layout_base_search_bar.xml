@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:paddingBottom="@dimen/dp_10"
+    android:paddingLeft="@dimen/dp_8"
+    android:paddingRight="@dimen/dp_8"
+    android:paddingTop="@dimen/dp_10">
+
+    <TextView
+        android:id="@+id/tv_search_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/dp_6"
+        android:layout_marginStart="@dimen/dp_6"
+        android:background="@drawable/selector_bg_btn_submit"
+        android:paddingBottom="@dimen/dp_6"
+        android:paddingEnd="@dimen/dp_16"
+        android:paddingStart="@dimen/dp_16"
+        android:paddingTop="@dimen/dp_6"
+        android:text="搜索"
+        android:textColor="@color/white" />
+
+    <EditText
+        android:id="@+id/et_search_query"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@id/tv_search_btn"
+        android:background="@drawable/shape_bg_search_round_grey"
+        android:drawableLeft="@drawable/ic_search"
+        android:drawablePadding="@dimen/dp_6"
+        android:drawableStart="@drawable/ic_search"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:hint="搜索居民"
+        android:imeOptions="actionSearch"
+        android:paddingBottom="@dimen/dp_8"
+        android:paddingEnd="@dimen/dp_8"
+        android:paddingStart="@dimen/dp_8"
+        android:paddingTop="@dimen/dp_8"
+        android:singleLine="true"
+        android:textColorHint="@color/TextHintColor"
+        android:textSize="16sp" />
+
+    <ImageButton
+        android:id="@+id/ib_search_clear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="6dp"
+        android:layout_marginRight="6dp"
+        android:layout_toLeftOf="@id/tv_search_btn"
+        android:background="@android:color/transparent"
+        android:padding="6dp"
+        android:src="@drawable/selector_search_clear"
+        android:visibility="invisible" />
+
+</RelativeLayout>

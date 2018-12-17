@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.tianxiabuyi.txutils.widget.BounceScrollView
+    android:id="@+id/scrollView"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/default_bg"
+    android:orientation="vertical"
+    android:overScrollMode="never"
+    >
+
+    <LinearLayout
+        android:id="@+id/llContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp_16"
+        android:background="@color/red"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical"
+        >
+
+        <requestFocus/>
+
+        <com.tianxiabuyi.txutils_ui.setting.SettingItemView
+            android:id="@+id/siv_name"
+            style="@style/follow_up_siv"
+            app:sivArrowEnabled="false"
+            app:sivContentHintText=""
+            app:sivLeftText="姓名"
+            />
+
+        <com.tianxiabuyi.txutils_ui.setting.SettingItemView
+            android:id="@+id/siv_number"
+            style="@style/follow_up_siv"
+            app:sivArrowEnabled="false"
+            app:sivContentHintText=""
+            app:sivLeftText="编号"
+            />
+
+        <com.tianxiabuyi.txutils_ui.setting.SettingItemView
+            android:id="@+id/siv_age"
+            style="@style/follow_up_siv"
+            app:sivLeftText="月龄"
+            />
+
+        <com.tianxiabuyi.txutils_ui.setting.SettingItemView
+            android:id="@+id/siv_visitTime"
+            style="@style/follow_up_siv"
+            app:sivLeftText="随访日期"
+            />
+
+        <com.tianxiabuyi.txutils_ui.setting.SettingEditView
+            android:id="@+id/sev_weight"
+            style="@style/follow_up_sev"
+            app:sevContentHintText="请输入体重"
+            app:sevContentTextLength="5"
+            app:sevLeftText="体重(kg)"
+            />
+
+        <com.tianxiabuyi.txutils_ui.setting.SettingItemView
+            android:id="@+id/siv_weight"
+            style="@style/follow_up_siv"
+            app:sivLeftText="体重情况"
+            />
+
+        <com.tianxiabuyi.txutils_ui.setting.SettingEditView
+            android:id="@+id/sev_height"
+            style="@style/follow_up_sev"
+            app:sevContentHintText="请输入身高"
+            app:sevContentInputType="numberDecimal"
+            app:sevContentTextLength="8"
+            app:sevLeftText="身高(cm)"
+            />
+
+        <com.tianxiabuyi.txutils_ui.setting.SettingItemView
+            android:id="@+id/siv_height"
+            style="@style/follow_up_siv"
+            app:sivLeftText="身高情况"
+            />
+
+
+        <com.tianxiabuyi.txutils_ui.setting.SettingEditView
+            android:id="@+id/sev_weightHeight"
+            style="@style/follow_up_sev"
+            app:sevContentHintText="请输入体重/身高"
+            app:sevContentTextLength="5"
+            app:sevLeftText="体重/身高"
+            />
+
+        <com.tianxiabuyi.txutils_ui.setting.SettingItemView
+            android:id="@+id/siv_weightHeight"
+            style="@style/follow_up_siv"
+            app:sivLeftText="体重/身高情况"
+            />
+
+        <com.tianxiabuyi.txutils_ui.setting.SettingItemView
+            android:id="@+id/siv_physicalGrowth"
+            style="@style/follow_up_siv"
+            app:sivLeftText="体格发育评价"
+            />
+
+
+        <com.tianxiabuyi.txutils_ui.setting.SettingEditView
+            android:id="@+id/sev_vision"
+            style="@style/follow_up_sev"
+            app:sevContentHintText="请输入视力"
+            app:sevLeftText="视力"
+            />
+
+        <com.tianxiabuyi.txutils_ui.setting.SettingItemView
+            android:id="@+id/siv_hearing"
+            style="@style/follow_up_siv"
+            app:sivLeftText="听力"
+            />
+
+        <com.tianxiabuyi.txutils_ui.setting.SettingEditView
+            android:id="@+id/sev_teethNumber"
+            style="@style/follow_up_sev"
+            app:sevContentHintText="请输入出牙数"
+            app:sevContentInputType="numberDecimal"
+            app:sevContentTextLength="8"
+            app:sevLeftText="出牙数(颗)"
+            />
+
+        <com.tianxiabuyi.txutils_ui.setting.SettingEditView
+            android:id="@+id/sev_cariesNumber"
+            style="@style/follow_up_sev"
+            app:sevContentHintText="请输入龋齿数"
+            app:sevContentInputType="numberDecimal"
+            app:sevContentTextLength="8"
+            app:sevLeftText="龋齿数(颗)"
+            />
+
+        <com.tianxiabuyi.txutils_ui.setting.SettingItemView
+            android:id="@+id/siv_chest"
+            style="@style/follow_up_siv"
+            app:sivLeftText="胸部"
+            />
+
+        <com.tianxiabuyi.txutils_ui.setting.SettingItemView
+            android:id="@+id/siv_abdomen"
+            style="@style/follow_up_siv"
+            app:sivLeftText="腹部"
+            />
+
+        <com.tianxiabuyi.txutils_ui.setting.SettingEditView
+            android:id="@+id/sev_hemoglobin"
+            style="@style/follow_up_sev"
+            app:sevContentHintText="血红蛋白值"
+            app:sevContentInputType="numberDecimal"
+            app:sevContentTextLength="8"
+            app:sevLeftText="血红蛋白值*(g/L)"
+            />
+
+        <com.tianxiabuyi.txutils_ui.setting.SettingEditView
+            android:id="@+id/sev_other"
+            style="@style/follow_up_sev"
+            app:sevContentHintText="请输入其他"
+            app:sevLeftText="其他"
+            />
+
+
+        <com.tianxiabuyi.txutils_ui.setting.SettingItemView
+            android:id="@+id/siv_developmentAssessment"
+            style="@style/follow_up_siv"
+            app:sivLeftText="发育评估"
+            />
+
+        <com.tianxiabuyi.txutils_ui.setting.SettingItemView
+            android:id="@+id/siv_diseaseCondition"
+            style="@style/follow_up_siv"
+            app:sivLeftText="两次随访间患病情况"
+            />
+
+        <com.tianxiabuyi.txutils_ui.setting.SettingEditView
+            android:id="@+id/sev_diseaseCondition1"
+            style="@style/follow_up_sev"
+            android:visibility="gone"
+            app:sevContentHintText="请输入肺炎次数"
+            app:sevContentInputType="number"
+            app:sevContentTextLength="8"
+            app:sevLeftText="肺炎(次)"
+            />
+
+        <com.tianxiabuyi.txutils_ui.setting.SettingEditView
+            android:id="@+id/sev_diseaseCondition2"
+            style="@style/follow_up_sev"
+            android:visibility="gone"
+            app:sevContentHintText="请输入腹泻次数"
+            app:sevContentInputType="number"
+            app:sevContentTextLength="8"
+            app:sevLeftText="腹泻(次)"
+            />
+
+        <com.tianxiabuyi.txutils_ui.setting.SettingEditView
+            android:id="@+id/sev_diseaseCondition3"
+            style="@style/follow_up_sev"
+            android:visibility="gone"
+            app:sevContentHintText="请输入外伤次数"
+            app:sevContentInputType="number"
+            app:sevContentTextLength="8"
+            app:sevLeftText="外伤(次)"
+            />
+
+        <com.tianxiabuyi.txutils_ui.setting.SettingEditView
+            android:id="@+id/sev_diseaseCondition4"
+            style="@style/follow_up_sev"
+            android:visibility="gone"
+            app:sevContentHintText="请输入其他患病情况"
+            app:sevLeftText="其他"
+            />
+
+        <com.tianxiabuyi.txutils_ui.setting.SettingItemView
+            android:id="@+id/siv_referralAdvice"
+            style="@style/follow_up_siv"
+            app:sivLeftText="转诊建议"
+            />
+
+        <com.tianxiabuyi.txutils_ui.setting.SettingEditView
+            android:id="@+id/sev_referralAdvice2"
+            style="@style/follow_up_sev"
+            android:visibility="gone"
+            app:sevContentHintText="请输入转诊原因"
+            app:sevLeftText="转诊原因"
+            />
+
+        <com.tianxiabuyi.txutils_ui.setting.SettingEditView
+            android:id="@+id/sev_referralInstitution"
+            style="@style/follow_up_sev"
+            android:visibility="gone"
+            app:sevContentHintText="请输入转诊的机构及科室"
+            app:sevLeftText="机构及科室"
+            />
+
+
+        <com.tianxiabuyi.txutils_ui.setting.SettingItemView
+            android:id="@+id/siv_guidance"
+            style="@style/follow_up_siv"
+            app:sivLeftText="指导"
+            />
+
+        <com.tianxiabuyi.txutils_ui.setting.SettingEditView
+            android:id="@+id/sev_guidance"
+            style="@style/follow_up_sev"
+            android:visibility="gone"
+            app:sevContentHintText="请输入其他指导"
+            app:sevLeftText=""
+            />
+
+        <com.tianxiabuyi.txutils_ui.setting.SettingItemView
+            android:id="@+id/siv_nextVisitTime"
+            style="@style/follow_up_siv"
+            app:sivLeftText="下次随访日期"
+            />
+
+
+        <com.tianxiabuyi.txutils_ui.setting.SettingEditView
+            android:id="@+id/sev_doctorName"
+            style="@style/follow_up_sev"
+            app:sevContentHintText=""
+            app:sevLeftText="随访医生签名"
+            />
+
+    </LinearLayout>
+
+</com.tianxiabuyi.txutils.widget.BounceScrollView>

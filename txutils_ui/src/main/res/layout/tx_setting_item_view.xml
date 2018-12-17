@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/viewLineTop"
+        style="@style/TxHorizontalLine"
+        android:visibility="gone"
+        tools:visibility="visible" />
+
+    <LinearLayout
+        android:id="@+id/llContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/dp_10"
+        android:paddingRight="@dimen/dp_10">
+
+        <ImageView
+            android:id="@+id/ivLeftIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/dp_10"
+            android:layout_marginRight="@dimen/dp_10"
+            android:visibility="gone"
+            tools:ignore="ContentDescription"
+            tools:src="@drawable/ic_setting_box" />
+
+        <LinearLayout
+            android:id="@+id/llLeftContainer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:minWidth="@dimen/dp_60"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvLeftTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:textColor="@color/tx_text_main"
+                tools:text="Title" />
+
+            <TextView
+                android:id="@+id/tvLeftDesc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textColor="@color/tx_text_secondary"
+                android:visibility="gone"
+                tools:text="desc"
+                tools:visibility="visible" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <EditText
+                android:id="@+id/etContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_10"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:background="@null"
+                android:enabled="false"
+                android:minWidth="100dp"
+                android:minHeight="@dimen/dp_40"
+                android:paddingLeft="@dimen/dp_6"
+                android:paddingTop="@dimen/dp_6"
+                android:paddingRight="@dimen/dp_6"
+                android:paddingBottom="@dimen/dp_6"
+                android:textSize="16sp"
+                android:visibility="gone"
+                tools:hint="内容"
+                tools:visibility="visible" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/llRightContainer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/ivRightIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                tools:ignore="ContentDescription"
+                tools:src="@drawable/ic_setting_box" />
+
+            <LinearLayout
+                android:id="@+id/llRightText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_10"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvRightTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxWidth="200dp"
+                    android:maxLines="1"
+                    android:textColor="@color/tx_text_secondary"
+                    android:visibility="gone"
+                    tools:text="Title"
+                    tools:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/tvRightDesc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:textColor="@color/tx_text_secondary"
+                    android:visibility="gone"
+                    tools:text="desc"
+                    tools:visibility="visible" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/ivArrowForward"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:src="@drawable/tx_arrow_forward"
+                android:visibility="gone"
+                tools:ignore="ContentDescription"
+                tools:visibility="visible" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/viewLineBottom"
+        style="@style/TxHorizontalLine"
+        android:visibility="gone"
+        tools:visibility="visible" />
+</merge>

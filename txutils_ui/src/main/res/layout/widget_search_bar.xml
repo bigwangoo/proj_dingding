@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/search_title_bar"
+    android:layout_width="fill_parent"
+    android:layout_height="50dp"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <com.tianxiabuyi.txutils_ui.search.CompleteTextView
+        android:id="@+id/et_keyword"
+        android:layout_width="0.0dip"
+        android:layout_height="32.0dip"
+        android:layout_weight="1.0"
+        android:background="@drawable/shape_bg_white"
+        android:drawableLeft="@drawable/ic_search"
+        android:drawablePadding="5dp"
+        android:hint="搜医院地点、搜路线"
+        android:imeOptions="actionSearch"
+        android:inputType="textNoSuggestions"
+        android:maxLength="25"
+        android:paddingLeft="12dp"
+        android:singleLine="true"
+        android:textColor="@color/black"
+        android:textColorHint="@color/tx_text_hint"
+        android:textSize="14sp"/>
+
+</LinearLayout>

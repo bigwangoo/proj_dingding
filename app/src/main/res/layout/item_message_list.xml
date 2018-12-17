@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/BgColor"
+              android:orientation="vertical"
+              android:paddingBottom="2dp"
+              android:paddingLeft="@dimen/dp_12"
+              android:paddingRight="@dimen/dp_12"
+              android:paddingTop="15dp"
+    >
+
+    <TextView
+        android:id="@+id/tvTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/message_greybg_shape"
+        android:gravity="center"
+        android:minWidth="100sp"
+        android:textColor="@color/white"
+        tools:text="2018.3.3"
+        />
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        app:cardCornerRadius="3dp"
+        app:cardElevation="1dp"
+        >
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/message_item_pressed_selector"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            >
+
+            <ImageView
+                android:id="@+id/iv_unread"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/message_red_triangle"
+                app:layout_constraintRight_toRightOf="parent"
+                />
+
+            <TextView
+                android:id="@+id/tvTitle"
+                style="@style/textColor1_16sp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:paddingBottom="12dp"
+                android:paddingTop="12dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="复诊消息复诊消息复诊消息复诊消息复诊消息复诊消息"
+                />
+
+
+            <ImageView
+                android:id="@+id/ivPreview"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:src="@mipmap/ic_launcher"
+                android:visibility="gone"
+                app:layout_constraintTop_toBottomOf="@+id/tvTitle"
+                />
+
+            <TextView
+                android:id="@+id/tvContent"
+                style="@style/textColor2_14sp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="3"
+                android:paddingBottom="@dimen/dp_10"
+                android:textColor="@color/TextColor2"
+                app:layout_constraintLeft_toLeftOf="@+id/tvTitle"
+                app:layout_constraintRight_toRightOf="@+id/tvTitle"
+                app:layout_constraintTop_toBottomOf="@+id/ivPreview"
+                tools:text="内容"
+                />
+
+            <View
+                style="@style/TxHorizontalLine"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginRight="@dimen/dp_10"
+                app:layout_constraintTop_toBottomOf="@+id/tvContent"
+                />
+
+
+            <TextView
+                android:id="@+id/tvDesc"
+                style="@style/textColor2_14sp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingBottom="@dimen/dp_12"
+                android:paddingTop="@dimen/dp_12"
+                android:text="@string/message_click_view_detail"
+                app:layout_constraintLeft_toLeftOf="@+id/tvTitle"
+                app:layout_constraintRight_toRightOf="@+id/tvTitle"
+                app:layout_constraintTop_toBottomOf="@+id/tvContent"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/dp_10"
+                android:src="@drawable/tx_arrow_forward"
+                app:layout_constraintBottom_toBottomOf="@+id/tvDesc"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/tvDesc"
+                />
+
+        </android.support.constraint.ConstraintLayout>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

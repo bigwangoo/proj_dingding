@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#28B3FF</color>
+    <color name="colorPrimaryDark">#28B3FF</color>
+    <color name="colorAccent">#28B3FF</color>
+
+    <!-- 通用颜色 -->
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="black_light">#333333</color>
+    <color name="gray_dark">#545454</color>
+    <color name="gray">#8F8F8F</color>
+    <color name="gray_light">#C4C4C4</color>
+    <color name="gray_white">#EEEEEE</color>
+    <color name="blue_dark">#1E70EA</color>
+    <color name="blue">#4189FF</color>
+    <color name="green">#3BC14E</color>
+    <color name="orange">#FFB52A</color>
+    <color name="pink">#FF4C67</color>
+
+    <!-- 默认背景 -->
+    <color name="default_bg">#F3F3F3</color>
+    <color name="bg_tip">#fac86c</color>
+
+    <!-- 字体颜色 -->
+    <color name="TextColor1">#333333</color>
+    <color name="TextColor2">#666666</color>
+    <color name="TextColor3">#999999</color>
+    <color name="TextHintColor">#cdcdcd</color>
+    <color name="BgColor">#f2f2f2</color>
+
+    <!-- 导航栏颜色 -->
+    <color name="tab_txt_normal">#333333</color>
+    <color name="tab_txt_selected">@color/colorPrimary</color>
+
+    <!-- 按钮背景 -->
+    <color name="bg_btn_red">#ff0000</color>
+    <color name="bg_btn_red_pressed">#ff0000</color>
+    <color name="bg_btn_orange">#f69a28</color>
+    <color name="bg_btn_orange_pressed">#fcac48</color>
+    <color name="bg_btn_green">#3ACA74</color>
+    <color name="bg_btn_green_pressed">#5bf499</color>
+    <color name="bg_btn_blue">#28B3FF</color>
+    <color name="bg_btn_blue_pressed">#cce2f6</color>
+
+    <!-- 头像 -->
+    <color name="bg_avatar_blue">#4189FF</color>
+
+    <!--二维码-->
+    <color name="result_view">#b0000000</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="possible_result_points">#c0ffff00</color>
+</resources>

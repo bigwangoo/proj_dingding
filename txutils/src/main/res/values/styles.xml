@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="TxAppTheme" parent="Theme.AppCompat.Light">
+
+    </style>
+
+    <style name="TxAppNoActionBarTheme" parent="Theme.AppCompat.Light.NoActionBar">
+
+    </style>
+
+    <!-- 透明主题 -->
+    <style name="TxAppTranslucentTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowDisablePreview">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Translucent</item>
+    </style>
+
+    <!-- 透明对话框Activity  -->
+    <style name="TxAppDialogActivity" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- 背景颜色 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!-- 是否有边框 -->
+        <item name="android:windowFrame">@null</item>
+        <!-- 是否有标题 -->
+        <item name="android:windowNoTitle">true</item>
+
+        <!-- 是否全屏 -->
+        <item name="android:windowFullscreen">true</item>
+        <!-- 是否透明的 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- 是否浮动的 -->
+        <item name="android:windowIsFloating">false</item>
+
+        <!-- 是否有遮盖 -->
+        <item name="android:windowContentOverlay">@null</item>
+        <!-- 窗口预览动画 -->
+        <item name="android:windowDisablePreview">true</item>
+        <!-- 窗口动画样式 -->
+        <item name="android:windowAnimationStyle">@null</item>
+        <!-- 对话框背景 -->
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <!-- 水平线条的样式 -->
+    <style name="line_horizontal">
+        <item name="android:layout_height">2px</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">@color/line_c</item>
+    </style>
+
+    <!-- 垂直线条的样式 -->
+    <style name="line_vertical">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">1px</item>
+        <item name="android:background">@color/line_c</item>
+    </style>
+
+    <!-- Text设计规范 -->
+    <style name="text_wrap">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+    </style>
+
+    <style name="text_14sp" parent="text_wrap">
+        <item name="android:textSize">@dimen/sp_14</item>
+        <item name="android:textColor">@color/text_c</item>
+    </style>
+
+    <style name="text_14sp_gray" parent="text_wrap">
+        <item name="android:textSize">@dimen/sp_14</item>
+        <item name="android:textColor">@color/second_c</item>
+    </style>
+
+    <style name="text_16sp" parent="text_wrap">
+        <item name="android:textSize">@dimen/sp_16</item>
+        <item name="android:textColor">@color/text_c</item>
+    </style>
+
+    <style name="text_16sp_gray" parent="text_wrap">
+        <item name="android:textSize">@dimen/sp_16</item>
+        <item name="android:textColor">@color/second_c</item>
+    </style>
+
+    <style name="text_normal" parent="@style/text_wrap">
+        <item name="android:textSize">@dimen/text_normal</item>
+        <item name="android:textColor">@color/text_c</item>
+    </style>
+
+    <style name="text_large" parent="@style/text_wrap">
+        <item name="android:textSize">@dimen/text_title</item>
+        <item name="android:textColor">@color/caption_c</item>
+    </style>
+
+    <!-- 圆角对话框 -->
+    <style name="dialog_circle" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@drawable/tx_bg_circle</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <!-- 分享动画 -->
+    <style name="TxAnimBottom" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/share_bottom_in</item>
+        <item name="android:windowExitAnimation">@anim/share_bottom_out</item>
+    </style>
+
+    <!-- 选项动画 -->
+    <!--<style name="TxAnimBottomPush">-->
+    <!--<item name="android:windowEnterAnimation">@anim/pw_push_bottom_in</item>-->
+    <!--<item name="android:windowExitAnimation">@anim/pw_push_bottom_out</item>-->
+    <!--</style>-->
+
+</resources>

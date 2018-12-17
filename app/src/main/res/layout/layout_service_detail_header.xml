@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_bg_round_white_top">
+
+    <ImageView
+        android:id="@+id/iv_type_fee"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:layout_marginStart="@dimen/dp_20"
+        android:textColor="@color/TextColor2"
+        android:textSize="@dimen/sp_16"
+        tools:src="@drawable/ic_type_free" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_type_fee"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="@dimen/dp_16"
+        android:layout_marginLeft="@dimen/dp_16"
+        android:layout_marginRight="@dimen/dp_16"
+        android:layout_marginTop="@dimen/dp_6">
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp_16"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_18"
+            tools:text="35-36岁慢性病健康包" />
+
+        <LinearLayout
+            android:id="@+id/ll_content_normal_fee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_name"
+            android:layout_marginBottom="@dimen/dp_16"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_fee_normal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/TextColor2"
+                android:textSize="@dimen/sp_14"
+                tools:text="￥100/年" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_4"
+                android:text="一般收费标准"
+                android:textColor="@color/TextColor2"
+                android:textSize="@dimen/sp_14" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_name"
+            android:layout_marginLeft="@dimen/dp_60"
+            android:layout_marginStart="@dimen/dp_60"
+            android:layout_toEndOf="@id/ll_content_normal_fee"
+            android:layout_toRightOf="@id/ll_content_normal_fee"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_fee_pack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/TextColor1"
+                android:textSize="@dimen/sp_16"
+                tools:text="￥30/年" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_4"
+                android:text="打包收费标准"
+                android:textColor="@color/TextColor1"
+                android:textSize="@dimen/sp_16" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_content_villager"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll_content_normal_fee"
+            android:visibility="gone"
+            tools:visibility="visible">
+
+            <TextView
+                android:id="@+id/tv_villager_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp_8"
+                android:textColor="@color/TextColor2"
+                android:textSize="@dimen/sp_16"
+                tools:text="签约居民：zzz早早早" />
+
+            <TextView
+                android:id="@+id/tv_follow_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_16"
+                android:layout_marginStart="@dimen/dp_16"
+                android:layout_toEndOf="@id/tv_villager_name"
+                android:layout_toRightOf="@id/tv_villager_name"
+                android:textColor="@color/TextColor2"
+                android:textSize="@dimen/sp_16"
+                tools:text="已随访：zzz次" />
+
+            <TextView
+                android:id="@+id/tv_service_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_villager_name"
+                android:layout_marginBottom="@dimen/dp_8"
+                android:textColor="@color/TextColor2"
+                android:textSize="@dimen/sp_16"
+                tools:text="服务时间：" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_remark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rl_content_villager"
+            android:text="备注："
+            android:textColor="@color/TextColor2"
+            android:textSize="@dimen/sp_16" />
+    </RelativeLayout>
+
+</RelativeLayout>

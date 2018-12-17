@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvTip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_20"
+        android:gravity="center"
+        android:text="我们将发送验证码到您的手机，请及时查收" />
+
+    <TextView
+        android:id="@+id/tvPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_20"
+        android:gravity="center"
+        android:textSize="@dimen/sp_18"
+        tools:text="18344684233" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_20"
+        android:gravity="center|left"
+        android:paddingEnd="@dimen/dp_40"
+        android:paddingStart="@dimen/dp_40"
+        android:text="短信验证码" />
+
+    <com.tianxiabuyi.villagedoctor.common.view.SmsCodeInputLayout
+        android:id="@+id/smsCodeInputLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="25dp"
+        android:digits="1234567890"
+        app:box="6"
+        app:box_bg_focus="@drawable/shape_sms_edit_bg_focus"
+        app:box_bg_normal="@drawable/shape_sms_edit_bg_normal"
+        app:child_h_padding="5dp"
+        app:child_height="@dimen/dp_50" />
+
+    <TextView
+        android:id="@+id/tvCount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_16"
+        android:gravity="center"
+        android:text="接收短信大约需要60秒" />
+
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/selector_bg_btn_submit"
+        android:enabled="false"
+        android:text="@string/login_common_next"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+</LinearLayout>

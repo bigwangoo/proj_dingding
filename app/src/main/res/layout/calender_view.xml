@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/dp_6"
+    >
+
+    <TextView
+        android:id="@+id/tv_monday"
+        style="@style/statistics_calender_text"
+        android:text="一"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/tv_tuesday"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/tv_tuesday"
+        style="@style/statistics_calender_text"
+        android:text="二"
+        app:layout_constraintLeft_toRightOf="@+id/tv_monday"
+        app:layout_constraintRight_toLeftOf="@+id/tv_wednesday"
+        />
+
+    <TextView
+        android:id="@+id/tv_wednesday"
+        style="@style/statistics_calender_text"
+        android:text="三"
+        app:layout_constraintLeft_toRightOf="@+id/tv_tuesday"
+        app:layout_constraintRight_toLeftOf="@+id/tv_thursday"
+        />
+
+    <TextView
+        android:id="@+id/tv_thursday"
+        style="@style/statistics_calender_text"
+        android:text="四"
+        app:layout_constraintLeft_toRightOf="@+id/tv_wednesday"
+        app:layout_constraintRight_toLeftOf="@+id/tv_firday"
+        />
+
+    <TextView
+        android:id="@+id/tv_firday"
+        style="@style/statistics_calender_text"
+        android:text="五"
+        app:layout_constraintLeft_toRightOf="@+id/tv_thursday"
+        app:layout_constraintRight_toLeftOf="@+id/tv_saturday"
+        />
+
+    <TextView
+        android:id="@+id/tv_saturday"
+        style="@style/statistics_calender_text"
+        android:text="六"
+        app:layout_constraintLeft_toRightOf="@+id/tv_firday"
+        app:layout_constraintRight_toLeftOf="@+id/tv_sunday"
+        />
+
+    <TextView
+        android:id="@+id/tv_sunday"
+        style="@style/statistics_calender_text"
+        android:text="日"
+        app:layout_constraintLeft_toRightOf="@+id/tv_saturday"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/tv_monday"
+        ></android.support.v7.widget.RecyclerView>
+</android.support.constraint.ConstraintLayout>

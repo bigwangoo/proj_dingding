@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:paddingBottom="@dimen/dp_12"
+    android:paddingTop="@dimen/dp_12"
+    >
+
+    <TextView
+        android:id="@+id/tv_time"
+        style="@style/blood_chart_text2"
+        android:layout_weight="1.5"
+        tools:text="测量时间"
+        />
+
+    <TextView
+        android:id="@+id/tv_standard"
+        style="@style/blood_chart_text2"
+        tools:text="标准值"
+        />
+
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1.8"
+        >
+
+        <TextView
+            android:id="@+id/tv_result"
+            style="@style/textColor1_16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:minWidth="50sp"
+            tools:text="测量结果"
+            />
+
+        <ImageView
+            android:id="@+id/iv_remark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/tv_result"
+            android:padding="@dimen/dp_2"
+            tools:src="@drawable/blood_arrow_red"
+            />
+    </RelativeLayout>
+
+</LinearLayout>

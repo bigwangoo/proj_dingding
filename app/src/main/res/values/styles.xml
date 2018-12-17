@@ -1,0 +1,429 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.DayNight.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!-- 无标题栏 -->
+    <style name="AppTheme.NoActionBar" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!-- 开屏页 -->
+    <style name="SplashTheme" parent="AppTheme.NoActionBar">
+        <item name="android:windowFullscreen">true</item>
+        <!--<item name="android:windowBackground">@drawable/splash_1</item>-->
+    </style>
+
+    <!-- 横线 -->
+    <style name="TxHorizontalLine">
+        <item name="android:layout_height">1px</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">@color/tx_bg_line</item>
+    </style>
+
+    <!-- 竖线 -->
+    <style name="TxVerticalLine">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">1px</item>
+        <item name="android:background">@color/tx_bg_line</item>
+    </style>
+
+    <!-- 文字样式 -->
+    <style name="textColor1_14sp">
+        <item name="android:textColor">@color/TextColor1</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="textColor1_16sp">
+        <item name="android:textColor">@color/TextColor1</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="textColor1_18sp">
+        <item name="android:textColor">@color/TextColor1</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="textColor2_14sp">
+        <item name="android:textColor">@color/TextColor2</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="textColor2_16sp">
+        <item name="android:textColor">@color/TextColor2</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="textColor2_18sp">
+        <item name="android:textColor">@color/TextColor2</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="textColor3_14sp">
+        <item name="android:textColor">@color/TextColor3</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="textColor3_16sp">
+        <item name="android:textColor">@color/TextColor3</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="textWhite_16sp">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <!-- 输入框 -->
+    <style name="EditText_Bg_White">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@null</item>
+        <item name="android:textSize">@dimen/sp_14</item>
+    </style>
+
+    <!-- 输入框 -->
+    <style name="EditText_White_Bg_SingleLine" parent="EditText_Bg_White">
+        <item name="android:maxLines">1</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <!-- 搜索输入框 -->
+    <style name="TxStyleEditText">
+        <item name="android:background">@drawable/tx_bg_search</item>
+        <item name="android:drawablePadding">@dimen/dp_8</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:imeOptions">actionSearch</item>
+        <item name="android:paddingLeft">6dp</item>
+        <item name="android:paddingRight">12dp</item>
+        <item name="android:paddingTop">6dp</item>
+        <item name="android:paddingBottom">6dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColorHint">@color/dimgray</item>
+        <item name="android:textColor">@color/tx_text</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:hint">搜索科室/专家</item>
+    </style>
+
+    <!-- 下拉 Popup -->
+    <style name="pop_anim_style">
+        <item name="android:windowEnterAnimation">@anim/pop_slide_in</item>
+        <item name="android:windowExitAnimation">@anim/pop_slide_out</item>
+    </style>
+
+    <!-- Top Right Menu -->
+    <style name="TRM_ANIM_STYLE">
+        <item name="android:windowEnterAnimation">@anim/trm_popup_enter</item>
+        <item name="android:windowExitAnimation">@anim/trm_popup_exit</item>
+    </style>
+
+    <!-- 设备录入 -->
+    <style name="blood_auto_text_name" parent="textColor3_16sp">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:paddingRight">12dp</item>
+        <item name="android:paddingTop">13dp</item>
+        <item name="android:paddingBottom">13dp</item>
+    </style>
+
+    <style name="blood_auto_text_value" parent="textColor1_16sp">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:gravity">right|center_vertical</item>
+        <item name="android:background">@null</item>
+        <item name="android:inputType">number</item>
+        <item name="android:imeOptions">actionNext</item>
+        <item name="android:textColorHint">@color/TextHintColor</item>
+    </style>
+
+    <style name="blood_choose_pop_text" parent="textColor2_16sp">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingBottom">12dp</item>
+        <item name="android:paddingTop">12dp</item>
+        <item name="android:paddingLeft">20dp</item>
+        <item name="android:background">@drawable/blooe_choose_greybg_selector</item>
+    </style>
+
+    <style name="blood_choose_pop_circle" parent="textColor2_16sp">
+        <item name="android:layout_width">10dp</item>
+        <item name="android:layout_height">10dp</item>
+        <item name="android:layout_marginRight">20dp</item>
+        <item name="android:background">@drawable/blood_blue_circle_shape</item>
+    </style>
+
+    <style name="blood_pop_transparent">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <style name="blood_pop_whitebg">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_marginLeft">50dp</item>
+        <item name="android:layout_marginRight">50dp</item>
+        <item name="android:background">@drawable/blood_pop_whitebg_shape</item>
+    </style>
+
+    <style name="blood_chart_text1" parent="textColor1_14sp">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingTop">12dp</item>
+        <item name="android:paddingBottom">12dp</item>
+        <item name="android:background">#f8f8f8</item>
+    </style>
+
+    <style name="blood_chart_text2" parent="textColor1_16sp">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="blood_pop_title">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/TextColor1</item>
+    </style>
+
+    <style name="blood_pop_text1" parent="textColor2_16sp">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingBottom">8dp</item>
+    </style>
+
+    <style name="blood_pop_edittext" parent="textColor2_16sp">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:textColorHint">@color/TextHintColor</item>
+        <item name="android:inputType">number</item>
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:layout_marginRight">5dp</item>
+        <item name="android:background">@drawable/blood_pop_greybod_shape</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:paddingRight">8dp</item>
+    </style>
+
+    <style name="blood_pop_text2" parent="textColor2_16sp">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginRight">20dp</item>
+    </style>
+
+    <!-- 统计 -->
+    <style name="statistics_name_text" parent="textColor3_16sp">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:minHeight">55dp</item>
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:layout_marginTop">1dp</item>
+    </style>
+
+    <style name="statistics_value_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginRight">8dp</item>
+        <item name="android:textSize">21sp</item>
+        <item name="android:textColor">@color/TextColor1</item>
+    </style>
+
+    <style name="statistics_man_text" parent="textColor3_16sp">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="statistics_calender_text" parent="textColor3_14sp">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingBottom">5dp</item>
+    </style>
+
+    <!-- 健康体检 -->
+    <style name="physical_name" parent="textColor1_16sp">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:minHeight">50dp</item>
+        <item name="android:background">@color/BgColor</item>
+        <item name="android:padding">@dimen/dp_12</item>
+    </style>
+
+    <style name="physical_name2" parent="textColor3_16sp">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:paddingLeft">@dimen/dp_12</item>
+        <item name="android:paddingRight">@dimen/dp_12</item>
+        <item name="android:paddingTop">@dimen/dp_10</item>
+        <item name="android:paddingBottom">@dimen/dp_10</item>
+    </style>
+
+    <style name="physical_content">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingLeft">@dimen/dp_12</item>
+        <item name="android:paddingRight">@dimen/dp_12</item>
+    </style>
+
+    <style name="physical_content_name" parent="textColor2_16sp">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1.2</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingBottom">@dimen/dp_12</item>
+        <item name="android:paddingTop">@dimen/dp_12</item>
+    </style>
+
+    <style name="physical_content_value" parent="textColor2_16sp">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">3</item>
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingBottom">@dimen/dp_12</item>
+        <item name="android:paddingTop">@dimen/dp_12</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:paddingRight">8dp</item>
+    </style>
+
+    <!-- 离线数据 -->
+    <style name="offline_data_detail_item">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingLeft">@dimen/dp_16</item>
+        <item name="android:paddingRight">@dimen/dp_16</item>
+        <item name="android:paddingTop">@dimen/dp_10</item>
+        <item name="android:paddingBottom">@dimen/dp_10</item>
+    </style>
+
+    <style name="offline_data_detail_left">
+        <item name="android:layout_width">@dimen/dp_120</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/TextColor2</item>
+        <item name="android:textSize">@dimen/sp_16</item>
+    </style>
+
+    <style name="offline_data_detail_right">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/dp_16</item>
+        <item name="android:textColor">@color/TextColor1</item>
+        <item name="android:textSize">@dimen/sp_16</item>
+    </style>
+
+    <!-- 居民新增 -->
+    <style name="villager_record_content">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">56dp</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="villager_record_left">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1.5</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="villager_record_right_input">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">3</item>
+        <item name="android:background">@null</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">6dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:lines">1</item>
+        <item name="android:paddingRight">6dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/TextColor2</item>
+    </style>
+
+    <style name="villager_record_right_txt">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">3</item>
+        <item name="android:drawablePadding">6dp</item>
+        <item name="android:drawableRight">@drawable/ic_arrow_next</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">6dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/TextColor2</item>
+        <!--<item name="android:background">@drawable/selector_bg_record_input</item>-->
+    </style>
+
+    <!-- 随访输入 -->
+    <style name="follow_up_sev">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="sevLeftWidth">100dp</item>
+        <item name="sevLeftTextColor">@color/TextColor1</item>
+        <item name="sevLeftTextSize">16sp</item>
+        <item name="sevContentTextColor">@color/TextColor2</item>
+        <item name="sevContentTextLength">100</item>
+        <item name="sevContentMinHeight">56dp</item>
+        <item name="sevContentInputType">text</item>
+        <item name="sevTopLineEnabled">true</item>
+    </style>
+
+    <!-- 随访选择 -->
+    <style name="follow_up_siv">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="sivLeftTextColor">@color/TextColor1</item>
+        <item name="sivLeftWidth">100dp</item>
+        <item name="sivLeftTextSize">16sp</item>
+        <item name="sivContentTextColor">@color/TextColor2</item>
+        <item name="sivContentHintText">点击选择</item>
+        <item name="sivContentMinHeight">56dp</item>
+        <item name="sivTopLineEnabled">true</item>
+        <item name="sivArrowEnabled">true</item>
+    </style>
+
+    <!-- 随访提示 -->
+    <style name="follow_up_text">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@color/default_bg</item>
+        <item name="android:paddingLeft">@dimen/dp_10</item>
+        <item name="android:paddingRight">@dimen/dp_10</item>
+        <item name="android:paddingTop">@dimen/dp_12</item>
+        <item name="android:paddingBottom">@dimen/dp_12</item>
+        <item name="android:textColor">@color/TextColor2</item>
+        <item name="android:textSize">@dimen/sp_18</item>
+    </style>
+
+    <plurals name="error_over_count">
+        <item quantity="one">你只可以选择1个图片</item>
+        <item quantity="many">你只可以选择%1$d图片</item>
+    </plurals>
+
+</resources>

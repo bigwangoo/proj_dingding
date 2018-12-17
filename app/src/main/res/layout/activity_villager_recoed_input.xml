@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/default_bg"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <requestFocus />
+
+    <LinearLayout
+        android:id="@+id/ll_nav_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingEnd="@dimen/dp_20"
+        android:paddingStart="@dimen/dp_20">
+
+        <LinearLayout
+            android:id="@+id/ll_c_info"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/dp_10"
+            android:paddingTop="@dimen/dp_10">
+
+            <ImageView
+                android:id="@+id/ivInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:enabled="true"
+                android:src="@drawable/selector_record_guide_drawable1" />
+
+            <TextView
+                android:id="@+id/tvInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_4"
+                android:enabled="true"
+                android:text="基本信息"
+                android:textColor="@color/selector_record_guide_txt"
+                android:textSize="@dimen/sp_12" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/line1"
+            style="@style/line_horizontal"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:id="@+id/ll_c_disease"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/dp_10"
+            android:paddingTop="@dimen/dp_10">
+
+            <ImageView
+                android:id="@+id/ivDisease"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                android:src="@drawable/selector_record_guide_drawable2" />
+
+            <TextView
+                android:id="@+id/tvDisease"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_4"
+                android:enabled="false"
+                android:text="病史"
+                android:textColor="@color/selector_record_guide_txt"
+                android:textSize="@dimen/sp_12" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/line2"
+            style="@style/line_horizontal"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:id="@+id/ll_c_envir"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/dp_10"
+            android:paddingTop="@dimen/dp_10">
+
+            <ImageView
+                android:id="@+id/iv_envir"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                android:src="@drawable/selector_record_guide_drawable3" />
+
+            <TextView
+                android:id="@+id/tv_envir"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_4"
+                android:enabled="false"
+                android:text="生活环境"
+                android:textColor="@color/selector_record_guide_txt"
+                android:textSize="@dimen/sp_12" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View style="@style/line_horizontal" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_record"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/ll_nav_content" />
+
+</RelativeLayout>

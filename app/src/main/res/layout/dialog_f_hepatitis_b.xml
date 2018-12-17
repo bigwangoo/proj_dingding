@@ -1,0 +1,108 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?selectableItemBackground"
+    android:minHeight="@dimen/item_one_line_h"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/dp_20"
+    android:paddingRight="@dimen/dp_20"
+    tools:gravity="start|center_vertical">
+
+    <requestFocus />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:minWidth="@dimen/dp_140"
+            android:text="乙型肝炎表面抗原"
+            android:textSize="@dimen/sp_16" />
+
+        <EditText
+            android:id="@+id/et_value_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:minWidth="@dimen/dp_140"
+            android:text="乙型肝炎表面抗体*"
+            android:textSize="@dimen/sp_16" />
+
+        <EditText
+            android:id="@+id/et_value_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:minWidth="@dimen/dp_140"
+            android:text="乙型肝炎 e 抗原*"
+            android:textSize="@dimen/sp_16" />
+
+        <EditText
+            android:id="@+id/et_value_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:minWidth="@dimen/dp_140"
+            android:text="乙型肝炎 e 抗体*"
+            android:textSize="@dimen/sp_16" />
+
+        <EditText
+            android:id="@+id/et_value_4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:minWidth="@dimen/dp_140"
+            android:text="乙型肝炎核心抗体*"
+            android:textSize="@dimen/sp_16" />
+
+        <EditText
+            android:id="@+id/et_value_5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical" />
+    </LinearLayout>
+</LinearLayout>

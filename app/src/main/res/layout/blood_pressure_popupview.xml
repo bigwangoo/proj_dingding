@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    style="@style/blood_pop_transparent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/ctl_content"
+        style="@style/blood_pop_whitebg"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="@dimen/dp_30"
+        android:layout_marginRight="@dimen/dp_30"
+        android:paddingBottom="25dp"
+        android:paddingTop="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/iv_close"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed"
+        >
+
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/blood_pop_title"
+            android:text="请输入血压值"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            />
+
+        <TextView
+            android:id="@+id/tv_high"
+            style="@style/blood_pop_text1"
+            android:text="收缩压:"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_title"
+            />
+
+        <EditText
+            android:id="@+id/et_high"
+            style="@style/blood_pop_edittext"
+            android:digits="0123456789"
+            android:hint="高压值"
+            android:maxLength="5"
+            android:imeOptions="actionNext"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_high"
+            app:layout_constraintLeft_toRightOf="@+id/tv_high"
+            app:layout_constraintRight_toLeftOf="@+id/tv_unit1"
+            app:layout_constraintTop_toTopOf="@+id/tv_high"
+            />
+
+        <TextView
+            android:id="@+id/tv_unit1"
+            style="@style/blood_pop_text2"
+            android:text="&#8197;mmHg"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_high"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tv_high"
+            />
+
+        <TextView
+            android:id="@+id/tv_low"
+            style="@style/blood_pop_text1"
+            android:text="舒张压:"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_high"
+            />
+
+        <EditText
+            android:id="@+id/et_low"
+            style="@style/blood_pop_edittext"
+            android:digits="0123456789"
+            android:hint="低压值"
+            android:imeOptions="actionNext"
+            android:maxLength="5"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_low"
+            app:layout_constraintLeft_toRightOf="@+id/tv_low"
+            app:layout_constraintRight_toLeftOf="@+id/tv_unit2"
+            app:layout_constraintTop_toTopOf="@+id/tv_low"
+            />
+
+        <TextView
+            android:id="@+id/tv_unit2"
+            style="@style/blood_pop_text2"
+            android:text="&#8197;mmHg"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_low"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tv_low"
+            />
+
+
+        <TextView
+            android:id="@+id/tv_pulse"
+            style="@style/blood_pop_text1"
+            android:text="脉&#8195;搏:"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_low"
+            />
+
+        <EditText
+            android:id="@+id/et_pulse"
+            style="@style/blood_pop_edittext"
+            android:digits="0123456789"
+            android:hint="30~200"
+            android:maxLength="5"
+            android:imeOptions="actionDone"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_pulse"
+            app:layout_constraintLeft_toRightOf="@+id/tv_pulse"
+            app:layout_constraintRight_toLeftOf="@+id/tv_unit3"
+            app:layout_constraintTop_toTopOf="@+id/tv_pulse"
+            />
+
+        <TextView
+            android:id="@+id/tv_unit3"
+            style="@style/blood_pop_text2"
+            android:text="次/分钟"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_pulse"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tv_pulse"
+            />
+
+        <TextView
+            android:id="@+id/tv_add"
+            style="@style/textWhite_16sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/blood_add_bluebg_selector"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="确认"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_pulse"
+            />
+
+    </android.support.constraint.ConstraintLayout>
+
+
+    <ImageView
+        android:id="@+id/iv_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ctl_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/blood_close"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ctl_content"
+        />
+
+</android.support.constraint.ConstraintLayout>

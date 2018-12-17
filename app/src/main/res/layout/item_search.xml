@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/selector_bg_pressed"
+    android:gravity="center_vertical"
+    android:paddingBottom="@dimen/dp_12"
+    android:paddingEnd="@dimen/dp_16"
+    android:paddingStart="@dimen/dp_16"
+    android:paddingTop="@dimen/dp_12">
+
+    <TextView
+        android:id="@+id/tvSearch"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="搜“xxx镇"
+        android:textColor="@color/tx_text"
+        android:textSize="16sp"
+        tools:text="搜“xxx镇" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_arrow_next_black" />
+</LinearLayout>

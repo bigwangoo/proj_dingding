@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_content_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/dp_8"
+        android:paddingTop="@dimen/dp_8"
+        android:visibility="gone"
+        tools:visibility="visible">
+
+        <TextView
+            android:id="@+id/tv_title_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_16"
+            android:layout_marginStart="@dimen/dp_16"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_18"
+            tools:text="服务名" />
+
+        <TextView
+            android:id="@+id/tv_title_suitable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_16"
+            android:layout_marginStart="@dimen/dp_16"
+            android:textColor="@color/TextColor1"
+            android:textSize="@dimen/sp_16"
+            tools:text="适宜人群" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_content_sub"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp_6"
+        android:layout_marginLeft="@dimen/dp_16"
+        android:layout_marginRight="@dimen/dp_8"
+        android:layout_marginTop="@dimen/dp_6"
+        android:orientation="vertical"
+        android:visibility="gone"
+        tools:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.tianxiabuyi.txutils_ui.text.TxAlignTextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/TextColor2"
+                android:textSize="@dimen/sp_16"
+                app:txAlignText="服务项目名称：" />
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/TextColor1"
+                android:textSize="@dimen/sp_16"
+                tools:text="name" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_6">
+
+            <com.tianxiabuyi.txutils_ui.text.TxAlignTextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/TextColor2"
+                android:textSize="@dimen/sp_16"
+                app:txAlignText="计价单位：" />
+
+            <TextView
+                android:id="@+id/tv_unit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/TextColor1"
+                android:textSize="@dimen/sp_16"
+                tools:text="name" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_6">
+
+            <com.tianxiabuyi.txutils_ui.text.TxAlignTextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/TextColor2"
+                android:textSize="@dimen/sp_16"
+                app:txAlignText="收费标准(元)：" />
+
+            <TextView
+                android:id="@+id/tv_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/TextColor1"
+                android:textSize="@dimen/sp_16"
+                tools:text="name" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_6">
+
+            <com.tianxiabuyi.txutils_ui.text.TxAlignTextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/TextColor2"
+                android:textSize="@dimen/sp_16"
+                app:txAlignText="平均次数：" />
+
+            <TextView
+                android:id="@+id/tv_average_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/TextColor1"
+                android:textSize="@dimen/sp_16"
+                tools:text="name" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_6">
+
+            <com.tianxiabuyi.txutils_ui.text.TxAlignTextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/TextColor2"
+                android:textSize="@dimen/sp_16"
+                app:txAlignText="金额(元)：" />
+
+            <TextView
+                android:id="@+id/tv_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/TextColor1"
+                android:textSize="@dimen/sp_16"
+                tools:text="name" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
