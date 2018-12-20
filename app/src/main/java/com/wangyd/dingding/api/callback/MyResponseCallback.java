@@ -9,7 +9,7 @@ import com.tianxiabuyi.txutils.config.TxConstants;
 import com.tianxiabuyi.txutils.network.callback.BaseResponseCallback;
 import com.tianxiabuyi.txutils.network.exception.TxException;
 import com.tianxiabuyi.txutils.util.ToastUtils;
-import com.tianxiabuyi.villagedoctor.R;
+import com.wangyd.dingding.R;
 import com.wangyd.dingding.api.exception.MyException;
 import com.wangyd.dingding.api.model.MyHttpResult;
 

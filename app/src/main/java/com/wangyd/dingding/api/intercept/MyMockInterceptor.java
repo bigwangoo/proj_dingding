@@ -9,10 +9,7 @@ import com.tianxiabuyi.txutils.TxUtils;
 import com.tianxiabuyi.txutils.db.util.IOUtil;
 import com.tianxiabuyi.txutils.network.util.TxLog;
 import com.tianxiabuyi.txutils.util.GsonUtils;
-import com.wangyd.dingding.api.API;
 import com.wangyd.dingding.api.model.MyHttpResult;
-import com.tianxiabuyi.villagedoctor.common.db.CacheDB;
-import com.tianxiabuyi.villagedoctor.common.db.OfflineDB;
 import com.wangyd.dingding.core.utils.UserSpUtils;
 
 import java.io.IOException;
@@ -43,7 +40,7 @@ public class MyMockInterceptor implements Interceptor {
         Request request = chain.request();
 
         // 离线模式
-        boolean offlineMode = UserSpUtils.getInstance().isOfflineMode();
+        boolean offlineMode = true;
         if (offlineMode) {
             response = interceptRequestWhenDebug(request);
         }
@@ -64,155 +61,7 @@ public class MyMockInterceptor implements Interceptor {
 
         String result;
         switch (getExactlyPath(path)) {
-            // 获取设备类型列表
-            case API.DEVICE_TYPE_LIST:
-                result = getCacheResponse(UserSpUtils.getInstance().getDeviceTypes());
-                break;
-            // 获取绑定设备列表
-            case API.DEVICE_LIST:
-                result = getCacheResponse(UserSpUtils.getInstance().getBindDevices());
-                break;
-            // 获取标签
-            case API.LABEL_LIST:
-                result = getCacheResponse(CacheDB.getCacheCacheLabel());
-                break;
-            // 获取服务项目
-            case API.SERVICE_PACK:
-                result = getCacheResponse(CacheDB.getCacheSP());
-                break;
-            // 获取可执行服务项目
-            case API.SERVICE_PACK_APP:
-                result = getCacheResponse(UserSpUtils.getInstance().getServiceExecutable());
-                break;
 
-            // 获取团队日程
-            case API.TEAM_DAILY_WORK:
-                result = getCacheResponse(CacheDB.getTown());
-                break;
-            // 签约村民列表
-            case API.CONTRACT_LIST_SEARCH:
-                result = getCacheResponse(CacheDB.getCacheContractVillager(request));
-                break;
-            // 居民档案列表
-            case API.RESIDENT_LIST_SEARCH:
-                result = getCacheResponse(CacheDB.getCacheResidentList(request));
-                break;
-            // 随访居民列表
-            case API.NEWBORN_LIST:
-                result = getCacheResponse(CacheDB.getCacheMarkVillager(API.NEWBORN_LIST, request));
-                break;
-            case API.CHILD_LIST:
-                result = getCacheResponse(CacheDB.getCacheMarkVillager(API.CHILD_LIST, request));
-                break;
-            case API.PREGNANT_LIST:
-                result = getCacheResponse(CacheDB.getCacheMarkVillager(API.PREGNANT_LIST, request));
-                break;
-            case API.MEDICINE_CHILD_LIST:
-                result = getCacheResponse(CacheDB.getCacheMarkVillager(API.MEDICINE_CHILD_LIST, request));
-                break;
-            case API.MEDICINE_TZ_LIST:
-                result = getCacheResponse(CacheDB.getCacheMarkVillager(API.MEDICINE_TZ_LIST, request));
-                break;
-            case API.BS_LIST:
-                result = getCacheResponse(CacheDB.getCacheMarkVillager(API.BS_LIST, request));
-                break;
-            case API.BP_LIST:
-                result = getCacheResponse(CacheDB.getCacheMarkVillager(API.BP_LIST, request));
-                break;
-            case API.MENTAL_LIST:
-                result = getCacheResponse(CacheDB.getCacheMarkVillager(API.MENTAL_LIST, request));
-                break;
-            case API.TUBER_LIST:
-                result = getCacheResponse(CacheDB.getCacheMarkVillager(API.TUBER_LIST, request));
-                break;
-
-            // 新增签约
-            case API.CONTRACT_ADD:
-                boolean v1 = OfflineDB.saveContractData(getParameterMap(request));
-                result = v1 ? getCacheResponse(null) : null;
-                break;
-            // 新增居民
-            case API.RESIDENT_INSERT:
-                boolean insert = OfflineDB.saveResidentData(getParameterMap(request));
-                result = insert ? getCacheResponse(null) : null;
-                break;
-            // 修改居民
-            case API.RESIDENT_MODIFY_OFFLINE:
-                boolean modify = OfflineDB.saveResidentModifyData(getParameterMap(request));
-                result = modify ? getCacheResponse(null) : null;
-                break;
-
-            // 上传工作签到
-            case API.TEAM_SIGN_IN:
-                boolean sign = OfflineDB.saveSignInData(getParameterMap(request));
-                result = sign ? getCacheResponse(null) : null;
-                break;
-            // 上传血糖血压
-            case API.HEATH_FOLLOWUP:
-                boolean follow = OfflineDB.saveFollowUpData(getParameterMap(request));
-                result = follow ? getCacheResponse(null) : null;
-                break;
-
-            // 新生儿
-            case API.NEWBORN_ADD:
-                boolean b1 = OfflineDB.saveFollowupData(getParameterMap(request));
-                result = b1 ? getCacheResponse(null) : null;
-                break;
-            // 儿童 1、2、3、4、5
-            case API.CHILD_ADD:
-                boolean b2 = OfflineDB.saveFollowupData(getParameterMap(request));
-                result = b2 ? getCacheResponse(null) : null;
-                break;
-            // 孕妇
-            case API.GRAVIDA_FIRST_ADD:
-                boolean b3 = OfflineDB.saveFollowupData(getParameterMap(request));
-                result = b3 ? getCacheResponse(null) : null;
-                break;
-            // 孕妇 2、3、4、5
-            case API.GRAVIDA_ADD:
-                boolean b4 = OfflineDB.saveFollowupData(getParameterMap(request));
-                result = b4 ? getCacheResponse(null) : null;
-                break;
-            // 孕妇 产后、42
-            case API.POSTPARTUM_ADD:
-                boolean b5 = OfflineDB.saveFollowupData(getParameterMap(request));
-                result = b5 ? getCacheResponse(null) : null;
-                break;
-            // 儿童中医药
-            case API.MEDICINE_CHILD_ADD:
-                boolean b6 = OfflineDB.saveFollowupData(getParameterMap(request));
-                result = b6 ? getCacheResponse(null) : null;
-                break;
-            // 血糖
-            case API.BS_ADD:
-                boolean b7 = OfflineDB.saveFollowupData(getParameterMap(request));
-                result = b7 ? getCacheResponse(null) : null;
-                break;
-            // 血压
-            case API.BP_ADD:
-                boolean b8 = OfflineDB.saveFollowupData(getParameterMap(request));
-                result = b8 ? getCacheResponse(null) : null;
-                break;
-            // 精神
-            case API.MENTAL_ADD:
-                boolean b9 = OfflineDB.saveFollowupData(getParameterMap(request));
-                result = b9 ? getCacheResponse(null) : null;
-                break;
-            // 精神补充
-            case API.MENTAL_SUPPLY_ADD:
-                boolean b10 = OfflineDB.saveFollowupData(getParameterMap(request));
-                result = b10 ? getCacheResponse(null) : null;
-                break;
-            // 肺结核第一次入户
-            case API.FIRST_TUBER_ADD:
-                boolean b11 = OfflineDB.saveFollowupData(getParameterMap(request));
-                result = b11 ? getCacheResponse(null) : null;
-                break;
-            // 肺结核
-            case API.TUBER_ADD:
-                boolean b12 = OfflineDB.saveFollowupData(getParameterMap(request));
-                result = b12 ? getCacheResponse(null) : null;
-                break;
 
             // 获取模拟数据
             case "api/likeThis":

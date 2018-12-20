@@ -51,7 +51,7 @@ public class MyInterceptor implements Interceptor {
         }
 
         // 添加country字段
-        String countyId = UserSpUtils.getInstance().getCountyId();
+        String countyId = null;
         if (!TextUtils.isEmpty(countyId)) {
             params.put(KEY_COUNTY, countyId);
             builder.addQueryParameter(KEY_COUNTY, countyId);

@@ -1,24 +1,18 @@
 package com.wangyd.dingding.module.login.activity;
 
-import com.wangyd.dingding.core.base.BaseMvpActivity;
-import com.wangyd.dingding.core.mvp.IPresenter;
+import com.tianxiabuyi.txutils.base.activity.BaseTxActivity;
+import com.wangyd.dingding.R;
 
 /**
- * 登录界面
- *
  * @author wangyd
- * @date 2018/12/10
+ * @date 2018/12/20
+ * @description 登录界面
  */
-public class LoginActivity extends BaseMvpActivity {
-
-    @Override
-    protected IPresenter createPresenter() {
-        return null;
-    }
+public class LoginActivity extends BaseTxActivity {
 
     @Override
     public int getViewByXml() {
-        return 0;
+        return R.layout.activity_login;
     }
 
     @Override

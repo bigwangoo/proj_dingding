@@ -19,19 +19,15 @@
     <color name="pink">#FF4C67</color>
 
     <!-- 默认背景 -->
-    <color name="default_bg">#F3F3F3</color>
+    <color name="bg_default">#F3F3F3</color>
+    <color name="bg_gray">#F3F3F3</color>
     <color name="bg_tip">#fac86c</color>
 
     <!-- 字体颜色 -->
-    <color name="TextColor1">#333333</color>
-    <color name="TextColor2">#666666</color>
-    <color name="TextColor3">#999999</color>
-    <color name="TextHintColor">#cdcdcd</color>
-    <color name="BgColor">#f2f2f2</color>
-
-    <!-- 导航栏颜色 -->
-    <color name="tab_txt_normal">#333333</color>
-    <color name="tab_txt_selected">@color/colorPrimary</color>
+    <color name="text_normal">#333333</color>
+    <color name="text_second">#666666</color>
+    <color name="text_gray">#999999</color>
+    <color name="text_hint">#cdcdcd</color>
 
     <!-- 按钮背景 -->
     <color name="bg_btn_red">#ff0000</color>
@@ -43,11 +39,8 @@
     <color name="bg_btn_blue">#28B3FF</color>
     <color name="bg_btn_blue_pressed">#cce2f6</color>
 
-    <!-- 头像 -->
-    <color name="bg_avatar_blue">#4189FF</color>
+    <!-- 导航栏颜色 -->
+    <color name="tab_txt_normal">#333333</color>
+    <color name="tab_txt_selected">@color/colorPrimary</color>
 
-    <!--二维码-->
-    <color name="result_view">#b0000000</color>
-    <color name="viewfinder_mask">#60000000</color>
-    <color name="possible_result_points">#c0ffff00</color>
 </resources>

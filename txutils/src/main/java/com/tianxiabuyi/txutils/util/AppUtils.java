@@ -4,6 +4,7 @@ import android.content.Context;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.content.pm.PackageManager.NameNotFoundException;
+import android.util.Log;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -91,5 +92,14 @@ public class AppUtils {
             }
         }
         return "";
+    }
+
+    /**
+     * 判断进程名，保证只有主进程运行
+     */
+    public static boolean isMainProcess(Context context) {
+        String processName = AppUtils.getProcessName();
+        Log.e("process", "process: " + processName);
+        return processName != null && processName.equals(context.getPackageName());
     }
 }
