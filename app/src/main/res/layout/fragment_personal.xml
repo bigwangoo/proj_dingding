@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_default"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/rl_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:paddingTop="@dimen/dp_20"
+            android:paddingBottom="@dimen/dp_20"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/iv_avatar"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_centerHorizontal="true"
+                android:src="@color/white"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:id="@+id/tv_name"
+                style="@style/H1White"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_avatar"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dp_10"
+                tools:text="李某某" />
+
+            <TextView
+                android:id="@+id/tv_info"
+                style="@style/H2White"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_name"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dp_10"
+                android:text="编辑个人资料" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_logout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:paddingTop="@dimen/dp_20"
+            android:paddingBottom="@dimen/dp_20">
+
+            <ImageView
+                android:id="@+id/iv_avatar2"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_centerHorizontal="true"
+                android:src="@color/white"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:id="@+id/tv_name2"
+                style="@style/H1White"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_avatar2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dp_10"
+                android:text="您还未登录哦~" />
+
+            <View
+                android:id="@+id/line"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_below="@id/tv_name2"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:id="@+id/tv_login"
+                style="@style/H2White"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_name2"
+                android:layout_marginTop="@dimen/dp_10"
+                android:layout_marginRight="@dimen/dp_16"
+                android:layout_toLeftOf="@id/line"
+                android:background="@drawable/shape_bg_round_transparent"
+                android:paddingLeft="@dimen/dp_16"
+                android:paddingRight="@dimen/dp_16"
+                android:text="登录" />
+
+            <TextView
+                android:id="@+id/tv_register"
+                style="@style/H2White"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_name2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="@dimen/dp_16"
+                android:layout_marginTop="@dimen/dp_10"
+                android:layout_toRightOf="@id/line"
+                android:background="@drawable/shape_bg_round_transparent"
+                android:paddingLeft="@dimen/dp_16"
+                android:paddingRight="@dimen/dp_16"
+                android:text="注册" />
+        </RelativeLayout>
+    </FrameLayout>
+
+    <com.tianxiabuyi.txutils_ui.setting.SettingItemView
+        android:id="@+id/siv_feedback"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_54"
+        app:sivBottomLineEnabled="true"
+        app:sivLeftIcon="@mipmap/person_mgs"
+        app:sivLeftIconHeight="@dimen/dp_22"
+        app:sivLeftIconWidth="@dimen/dp_30"
+        app:sivLeftText="意见反馈"
+        app:sivLeftTextSize="@dimen/sp_18" />
+
+    <com.tianxiabuyi.txutils_ui.setting.SettingItemView
+        android:id="@+id/siv_service"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_54"
+        app:sivBottomLineEnabled="true"
+        app:sivLeftIcon="@mipmap/person_mgs"
+        app:sivLeftIconHeight="@dimen/dp_22"
+        app:sivLeftIconWidth="@dimen/dp_30"
+        app:sivLeftText="联系客服"
+        app:sivLeftTextSize="@dimen/sp_18" />
+
+    <com.tianxiabuyi.txutils_ui.setting.SettingItemView
+        android:id="@+id/siv_help"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_54"
+        app:sivBottomLineEnabled="true"
+        app:sivLeftIcon="@mipmap/person_mgs"
+        app:sivLeftIconHeight="@dimen/dp_22"
+        app:sivLeftIconWidth="@dimen/dp_30"
+        app:sivLeftText="帮助中心"
+        app:sivLeftTextSize="@dimen/sp_18" />
+
+    <com.tianxiabuyi.txutils_ui.setting.SettingItemView
+        android:id="@+id/siv_share"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_54"
+        app:sivBottomLineEnabled="true"
+        app:sivLeftIcon="@mipmap/person_mgs"
+        app:sivLeftIconHeight="@dimen/dp_22"
+        app:sivLeftIconWidth="@dimen/dp_30"
+        app:sivLeftText="分享好友"
+        app:sivLeftTextSize="@dimen/sp_18" />
+</LinearLayout>

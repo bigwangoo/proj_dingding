@@ -2,6 +2,7 @@ package com.wangyd.dingding.core.utils;
 
 import android.content.Context;
 import android.support.v4.content.ContextCompat;
+import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 
@@ -16,22 +17,47 @@ import com.wangyd.dingding.R;
  */
 public class RecyclerUtils {
 
-    public static void setLinearRecycler(Context context, RecyclerView recyclerview, BaseQuickAdapter mAdapter) {
-        recyclerview.setLayoutManager(new LinearLayoutManager(context));
-        recyclerview.setAdapter(mAdapter);
+    /**
+     * linear
+     */
+    public static void setLinearRecycler(Context context, RecyclerView recyclerView, BaseQuickAdapter mAdapter) {
+        recyclerView.setLayoutManager(new LinearLayoutManager(context));
+        recyclerView.setAdapter(mAdapter);
     }
 
-    public static void setLinearRecyclerDiveder(Context context, RecyclerView recyclerview, BaseQuickAdapter mAdapter) {
-        recyclerview.setLayoutManager(new LinearLayoutManager(context));
-        recyclerview.addItemDecoration(new RecycleViewDivider(context, LinearLayoutManager.HORIZONTAL));
-        recyclerview.setAdapter(mAdapter);
+    public static void setLinearRecyclerDivider(Context context, RecyclerView recyclerView, BaseQuickAdapter mAdapter) {
+        recyclerView.setLayoutManager(new LinearLayoutManager(context));
+        recyclerView.addItemDecoration(new RecycleViewDivider(context, LinearLayoutManager.HORIZONTAL));
+        recyclerView.setAdapter(mAdapter);
     }
 
-    public static void setLinearRecyclerDivederHeight(Context context, RecyclerView recyclerview, BaseQuickAdapter mAdapter) {
-        recyclerview.setLayoutManager(new LinearLayoutManager(context));
-        recyclerview.addItemDecoration(new RecycleViewDivider(context,
+    public static void setLinearRecyclerDividerHeight(Context context, RecyclerView recyclerView, BaseQuickAdapter mAdapter) {
+        recyclerView.setLayoutManager(new LinearLayoutManager(context));
+        recyclerView.addItemDecoration(new RecycleViewDivider(context,
                 LinearLayoutManager.HORIZONTAL, 2, ContextCompat.getColor(context, R.color.line_c)));
-        recyclerview.setAdapter(mAdapter);
+        recyclerView.setAdapter(mAdapter);
+    }
+
+
+    /**
+     * grid
+     */
+    public static void setGridRecycler(Context context, RecyclerView recyclerView, int spanCount, BaseQuickAdapter mAdapter) {
+        recyclerView.setLayoutManager(new GridLayoutManager(context, spanCount));
+        recyclerView.setAdapter(mAdapter);
+    }
+
+    public static void setGridRecyclerDivider(Context context, RecyclerView recyclerView, int spanCount, BaseQuickAdapter mAdapter) {
+        recyclerView.setLayoutManager(new GridLayoutManager(context, spanCount));
+        recyclerView.addItemDecoration(new RecycleViewDivider(context, LinearLayoutManager.HORIZONTAL));
+        recyclerView.setAdapter(mAdapter);
+    }
+
+    public static void setGridRecyclerDividerHeight(Context context, RecyclerView recyclerView, int spanCount, BaseQuickAdapter mAdapter) {
+        recyclerView.setLayoutManager(new GridLayoutManager(context, spanCount));
+        recyclerView.addItemDecoration(new RecycleViewDivider(context,
+                LinearLayoutManager.HORIZONTAL, 2, ContextCompat.getColor(context, R.color.line_c)));
+        recyclerView.setAdapter(mAdapter);
     }
 
 }

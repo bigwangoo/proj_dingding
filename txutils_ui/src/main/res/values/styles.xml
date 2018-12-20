@@ -10,6 +10,11 @@
         <item name="android:textColor">@color/black</item>
     </style>
 
+    <style name="H1White">
+        <item name="android:textSize">@dimen/H1</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
     <style name="H1Light">
         <item name="android:textSize">@dimen/H1</item>
         <item name="android:textColor">@color/tx_text_light</item>
@@ -22,6 +27,11 @@
     <style name="H2Dark">
         <item name="android:textSize">@dimen/H2</item>
         <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="H2White">
+        <item name="android:textSize">@dimen/H2</item>
+        <item name="android:textColor">@color/white</item>
     </style>
 
     <style name="H2Light">
@@ -38,6 +48,11 @@
         <item name="android:textColor">@color/black</item>
     </style>
 
+    <style name="H3White">
+        <item name="android:textSize">@dimen/H3</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
     <style name="H3Light">
         <item name="android:textSize">@dimen/H2</item>
         <item name="android:textColor">@color/tx_text_light</item>
@@ -45,7 +60,7 @@
 
     <!-- 横线 -->
     <style name="TxHorizontalLine">
-        <item name="android:layout_height">2px</item>
+        <item name="android:layout_height">1px</item>
         <item name="android:layout_width">match_parent</item>
         <item name="android:background">@color/tx_bg_line</item>
     </style>

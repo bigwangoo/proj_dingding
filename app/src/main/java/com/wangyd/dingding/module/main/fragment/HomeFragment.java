@@ -33,7 +33,7 @@ public class HomeFragment extends BaseTxFragment implements BaseQuickAdapter.OnI
     @Override
     public void initView() {
         mAdapter = new HomeAdapter(new ArrayList<>());
-        RecyclerUtils.setLinearRecyclerDiveder(getActivity(), rvList, mAdapter);
+        RecyclerUtils.setLinearRecyclerDivider(getActivity(), rvList, mAdapter);
         mAdapter.setOnItemChildClickListener(this);
     }
 

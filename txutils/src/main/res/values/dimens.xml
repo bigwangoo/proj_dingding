@@ -3,46 +3,4 @@
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
 
-    <!-- SP -->
-    <dimen name="sp_12">12sp</dimen>
-    <dimen name="sp_14">14sp</dimen>
-    <dimen name="sp_16">16sp</dimen>
-    <dimen name="sp_18">18sp</dimen>
-    <dimen name="sp_20">20sp</dimen>
-    <!-- DP -->
-    <dimen name="dp_066">0.66dp</dimen>
-    <dimen name="dp_2">2dp</dimen>
-    <dimen name="dp_4">4dp</dimen>
-    <dimen name="dp_6">6dp</dimen>
-    <dimen name="dp_10">10dp</dimen>
-    <dimen name="dp_14">14dp</dimen>
-    <dimen name="dp_16">16dp</dimen>
-    <dimen name="dp_20">20dp</dimen>
-    <dimen name="dp_22">22dp</dimen>
-    <dimen name="dp_28">28dp</dimen>
-    <dimen name="dp_30">30dp</dimen>
-    <dimen name="dp_36">36dp</dimen>
-    <dimen name="dp_40">40dp</dimen>
-    <dimen name="dp_60">60dp</dimen>
-    <dimen name="dp_70">70dp</dimen>
-    <dimen name="dp_72">72dp</dimen>
-    <dimen name="dp_200">200dp</dimen>
-
-    <!-- 字体 -->
-    <dimen name="text_normal">16sp</dimen>
-    <dimen name="text_title">18sp</dimen>
-
-    <!-- 高度 -->
-    <dimen name="def_height">50dp</dimen>
-
-    <!-- item height -->
-    <dimen name="item_layout_list">56dp</dimen>
-    <!-- item 1：一行文字 字体16sp -->
-    <dimen name="item_one_line_h">48dp</dimen>
-    <!-- item 2：一行文字 有头像 -->
-    <dimen name="item_one_line_image_h">56dp</dimen>
-    <!-- item 3：两行文字 -->
-    <dimen name="item_two_line_h_normal">72dp</dimen>
-    <!-- item 6：三行文字 -->
-    <dimen name="item_three_line_h_normal">88dp</dimen>
 </resources>

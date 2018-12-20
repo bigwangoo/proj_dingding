@@ -56,7 +56,9 @@ dependencies {
 
     implementation project(':txutils')
     implementation project(':txutils_ui')
-
+    
+    // 屏幕适配
+    implementation 'me.jessyan:autosize:1.1.1'
     // rxBinding
     implementation 'com.jakewharton.rxbinding2:rxbinding:2.1.1'
     // Dialog
