@@ -2,7 +2,7 @@
 <merge xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content" >
+    android:layout_height="wrap_content">
 
     <ImageView
         android:id="@+id/ivLeftIcon"
@@ -19,8 +19,8 @@
         android:layout_marginLeft="@dimen/dp_10"
         android:layout_toRightOf="@id/ivLeftIcon"
         android:gravity="center"
-        tools:text="新闻资讯"
-        android:textSize="@dimen/H2" />
+        android:textSize="@dimen/H2"
+        tools:text="新闻资讯" />
 
     <TextView
         android:id="@+id/tvMore"

@@ -7,6 +7,8 @@ package com.wangyd.dingding;
  */
 public class Constant {
 
+    public static final String BUGLY_APP_ID = "8d03886ded";
+
     public static String getBaseUrl() {
         return null;
     }

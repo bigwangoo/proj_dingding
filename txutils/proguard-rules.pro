@@ -159,12 +159,12 @@
 }
 -keepresourcexmlelements manifest/application/meta-data@value=GlideModule
 
-#------------------ ucrop -------------------------------------------------------------------------
+#------------------ ucrop --------------------------------------------------------------------------
 -dontwarn com.yalantis.ucrop**
 -keep class com.yalantis.ucrop** { *; }
 -keep interface com.yalantis.ucrop** { *; }
 
-#------------------ Bugly -------------------------------------------------------------------------
+#------------------ Bugly --------------------------------------------------------------------------
 -dontwarn com.tencent.bugly.**
 -keep public class com.tencent.bugly.**{*;}
 

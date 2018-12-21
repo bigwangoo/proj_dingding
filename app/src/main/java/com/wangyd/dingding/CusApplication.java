@@ -2,9 +2,11 @@ package com.wangyd.dingding;
 
 import android.app.Activity;
 import android.app.Application;
+import android.content.Context;
 import android.os.Bundle;
 import android.support.multidex.MultiDexApplication;
 
+import com.tencent.bugly.crashreport.CrashReport;
 import com.tencent.smtt.sdk.QbSdk;
 import com.tianxiabuyi.txutils.TxConfiguration;
 import com.tianxiabuyi.txutils.TxUtils;
@@ -40,6 +42,7 @@ public class CusApplication extends MultiDexApplication {
         // 防止多进程重复初始化
         if (AppUtils.isMainProcess(this)) {
             initTxUtils();
+            initBugly();
             initThird();
         }
     }
@@ -66,10 +69,23 @@ public class CusApplication extends MultiDexApplication {
         TxUtils.getInstance().init(configuration);
     }
 
-    private void initThird() {
-        // bugly
-//        Bugly.init(getApplicationContext(), Constant.BUGLY_APP_ID, BuildConfig.DEBUG);
+    private void initBugly() {
+        // 初始化Bugly
+        Context context = getApplicationContext();
+        String packageName = context.getPackageName();
+        String processName = AppUtils.getProcessName();
+        // 上报策略
+        CrashReport.UserStrategy strategy = new CrashReport.UserStrategy(context);
+        // 上报进程
+        strategy.setUploadProcess(processName == null || processName.equals(packageName));
+        // 初始化延迟20s
+        strategy.setAppReportDelay(20000);
+        CrashReport.initCrashReport(context, Constant.BUGLY_APP_ID, BuildConfig.DEBUG, strategy);
+        // 开发设备
+        CrashReport.setIsDevelopmentDevice(context, BuildConfig.DEBUG);
+    }
 
+    private void initThird() {
         // X5
         QbSdk.initX5Environment(getApplicationContext(), null);
 
