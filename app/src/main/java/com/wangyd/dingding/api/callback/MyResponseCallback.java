@@ -16,22 +16,21 @@ import com.wangyd.dingding.api.model.MyHttpResult;
 /**
  * @author wangyd
  * @date 2018/6/13
- * @description 网路请求回调，继承父类，根据新后台重写
+ * @description 网路请求回调，根据后台自定义
  */
 public abstract class MyResponseCallback<T> extends BaseResponseCallback<T> {
 
-    protected boolean mIsShowToast = true;
+    private boolean mIsShowToast = true;
 
     public MyResponseCallback() {
-
-    }
-
-    public MyResponseCallback(boolean isShowToast) {
-        mIsShowToast = isShowToast;
     }
 
     public MyResponseCallback(Context context) {
         super(context);
+    }
+
+    public MyResponseCallback(boolean isShowToast) {
+        mIsShowToast = isShowToast;
     }
 
     public MyResponseCallback(Context context, boolean isShowToast) {
@@ -71,11 +70,11 @@ public abstract class MyResponseCallback<T> extends BaseResponseCallback<T> {
     @Override
     public void onFailed(TxException e) {
         String message = e.getDetailMessage();
+
         if (e.getResultCode() == 500 || e.getResultCode() == 504) {
             // 读取失败
             message = TxUtils.getInstance().getContext().getString(R.string.tx_retry_error_def);
             onError(new MyException(message));
-
         } else if (e.getResultCode() == MyHttpResult.NOT_LOGIN) {
             // Token未认证，需重新登录
             onTokenExpired();

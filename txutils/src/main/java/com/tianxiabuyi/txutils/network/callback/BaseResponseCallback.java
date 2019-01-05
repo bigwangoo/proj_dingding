@@ -32,8 +32,8 @@ import retrofit2.Response;
  */
 public abstract class BaseResponseCallback<T> implements TxCallback<T> {
 
-    protected Context mContext;
-    protected ProgressDialog mDialog;
+    private Context mContext;
+    private ProgressDialog mDialog;
 
     protected BaseResponseCallback() {
     }
@@ -75,7 +75,7 @@ public abstract class BaseResponseCallback<T> implements TxCallback<T> {
                     onFailed(new TxException(httpResult));
                 }
             } else {
-                // 老接口、其他自定义数据
+                // 其他自定义数据
                 onSuccess(result);
             }
         } else {
